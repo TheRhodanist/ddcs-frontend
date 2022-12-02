@@ -37,6 +37,11 @@
           }
         }
       }
+    },
+    {
+      "label": "ng serve on 127",
+      "type": "shell",
+      "command": "ng serve --host 127.0.0.1",
     }
   ]
 }

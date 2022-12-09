@@ -5,12 +5,17 @@
   }
   
   .main-sidebar-content {
-    display: flex;
+    display: grid;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 128px 1fr;
   }
   
   .main-sidebar {
     padding: 20px;
   }
+
+#main-icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

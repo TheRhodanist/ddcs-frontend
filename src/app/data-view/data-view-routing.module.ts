@@ -4,8 +4,8 @@ import { DataViewComponent } from './data-view.component';
 import { UnitListComponent } from './unit-list/unit-list.component';
 
 const routes: Routes = [
-  { path: 'data/overview', component: DataViewComponent},
-  { path: 'data/units', component: UnitListComponent },
+  { path: 'overview', component: DataViewComponent},
+  { path: 'units', component: UnitListComponent },
 
 ];
 

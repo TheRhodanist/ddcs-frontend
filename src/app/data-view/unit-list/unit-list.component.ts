@@ -12,10 +12,11 @@ export interface Filter {
 }
 
 @Component({
-  templateUrl: './data.component.html',
-  styleUrls: ['./data.component.scss']
+  selector: 'app-unit-list',
+  templateUrl: './unit-list.component.html',
+  styleUrls: ['./unit-list.component.scss']
 })
-export class DataComponent implements OnInit{
+export class UnitListComponent implements OnInit{
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
   filters: Filter[] = [{name: 'Plane'}];

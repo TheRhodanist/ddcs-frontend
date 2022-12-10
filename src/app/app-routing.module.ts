@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './routing-components/dashboard/dashboard.component';
-import { DataComponent } from './routing-components/data/data.component';
 
 const routes: Routes = [
-  { path: 'data', component: DataComponent},
+  { path: 'data', loadChildren: () => import('./data-view/data-view.module').then(m => m.DataViewModule) },
 
   { path: '**', component: DashboardComponent },
 ];

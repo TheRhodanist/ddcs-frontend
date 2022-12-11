@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DataViewComponent } from './data-view.component';
 import { OverviewComponent } from './overview/overview.component';
-import { PlaneListComponent } from './planes/plane-list.component';
+import { PlaneListComponent } from './plane-list/plane-list.component';
 import { UnitListComponent } from './unit-list/unit-list.component';
-import { WeaponListComponent } from './weapons/weapon-list.component';
+import { WeaponListComponent } from './weapon-list/weapon-list.component';
 
 const routes: Routes = [
   { path: '',component: DataViewComponent,children: [

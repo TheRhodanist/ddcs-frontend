@@ -5,8 +5,8 @@ import { DataViewComponent } from './data-view.component';
 import { UnitListComponent } from './unit-list/unit-list.component';
 import { SharedUIModule } from '../shared/shared.module';
 import { OverviewComponent } from './overview/overview.component';
-import { PlaneListComponent } from './planes/plane-list.component';
-import { WeaponListComponent } from './weapons/weapon-list.component';
+import { PlaneListComponent } from './plane-list/plane-list.component';
+import { WeaponListComponent } from './weapon-list/weapon-list.component';
 //Angular Material
 
 

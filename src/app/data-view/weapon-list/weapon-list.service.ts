@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Output } from '@angular/core';
-import { catchError,filter,map,mergeMap,of,tap } from 'rxjs';
 import { Weapon } from 'src/app/services/Interfaces';
 import { categoryFilter } from 'src/app/shared/shared.module';
 import weaponCategories from "./weaponCategories.json"
@@ -9,18 +8,16 @@ import weaponCategories from "./weaponCategories.json"
 export class WeaponListService {
   weapons: Weapon[] = [];
   private importedFilters = weaponCategories;
-  filters: categoryFilter<Weapon>[] = [];
+  filters: categoryFilter<Weapon>[] = [{"name":"All","filterFunction":(weapon:Weapon) => true}];
   constructor(
     private http: HttpClient,
   ) { }
 
   getWeapons() {
-    return this.http.get<Weapon[]>("../../assets/weaponcost_attributes.json").pipe(
-      tap(_=>console.log("weapons fetched"))
-    )
+    return this.http.get<Weapon[]>("../../assets/weaponcost_attributes.json")
   }
   /**
-   * 
+   * Builds an array of categoryFilter object and saves it to the local filters object
    */
    buildFilters():void {
     for (const filter of this.importedFilters) {
@@ -29,8 +26,12 @@ export class WeaponListService {
       }})
     }
   }
-  getFilters() {
-    if(this.filters.length==0) {this.buildFilters();}
+  /**
+   * Exports an array of filter object and builds one if necessary
+   * @returns Array of categoryFilter objects
+   */
+  getFilters(): categoryFilter<Weapon>[] {
+    if(this.filters.length==1) {this.buildFilters();}
     return this.filters;
   }
 }

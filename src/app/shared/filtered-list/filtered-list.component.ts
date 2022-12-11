@@ -5,13 +5,9 @@ import { concatMap, Observable } from 'rxjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatChipListboxChange } from '@angular/material/chips';
-import { categoryFilter } from '../shared.module';
+import { categoryFilter, columnFormat } from '../shared.module';
 
-export interface columnFormat {
-  columnDef: string;//'definition',
-  header: string//'displayed header',
-  cell: Function //(element: ElementType) => '${element.definition}',
-}
+
 @Component({
   selector: 'app-filtered-list',
   templateUrl: './filtered-list.component.html',
@@ -20,10 +16,13 @@ export interface columnFormat {
 export class FilteredListComponent<T> implements OnInit{
   
     addOnBlur = true;
-    //readonly separatorKeysCodes = [ENTER, COMMA] as const;
+    @Input() columns: columnFormat[] = [
+      {columnDef:'_id',header:'ID',cell: (element: any) => element._id},
+      {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
+    ];
+    @Input() data: any[] = [];
     @Input() filters: categoryFilter<T>[] = [];
     activeFilters: categoryFilter<T>[] = [];
-    @Input() data: any[] = [];
     filteredData: any[] = [];
     
     /*
@@ -34,10 +33,7 @@ export class FilteredListComponent<T> implements OnInit{
     * cell: (element: ElementType) => '${element.definition}',
     * }
     */
-    @Input() columns: columnFormat[] = [
-      {columnDef:'_id',header:'ID',cell: (element: any) => element._id},
-      {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
-    ];
+    
     displayedColumns = this.columns.map(c => c.columnDef);
 
     //displayedColumns: string[] = ['_id', 'natoName', 'warbondCost'];
@@ -54,9 +50,12 @@ export class FilteredListComponent<T> implements OnInit{
     }
     ngAfterViewInit() {
       this.dataSource.paginator = this.paginator;
+      this.updateChips(["All"]);
     }
     ngOnChanges(changes: SimpleChanges) {
       this.update();
+      this.displayedColumns = this.columns.map(c => c.columnDef);
+      
     }
     /**
      * A function that is called when the state of the filter-chips changes
@@ -64,27 +63,27 @@ export class FilteredListComponent<T> implements OnInit{
      */
     changedChips(change: MatChipListboxChange) {
 
-      
-      
       this.activeFilters = [];
-        for (const chipName of change.value) {
-          this.activeFilters = this.filters.filter(element => element.name==chipName)
-        }
+        this.updateChips([change.value]);
         this.update();
+    }
+    updateChips(chips:any) {
+      for (const chipName of chips) {
+        this.activeFilters = this.activeFilters.concat(
+          this.filters.filter(element => element.name==chipName));
+      }
     }
     /**
      * A function that updates the currently displayed data according to the active filters
      */
     update():void {
-      console.log("updating");
-      
-      this.dataSource.data = this.data;
+      this.dataSource.data = [];
       for (const filter of this.activeFilters) {
         //console.log(filter);
         
         // console.log(this.dataSource.data);
         
-        this.dataSource.data = this.dataSource.data.filter(filter.filterFunction)
+        this.dataSource.data = this.dataSource.data.concat(this.data.filter(filter.filterFunction));
         // console.log(this.dataSource.data);
       }
     }

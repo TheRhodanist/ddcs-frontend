@@ -60,3 +60,8 @@ export interface categoryFilter<T> {
   name:string,
   filterFunction: (arg1: T) => boolean,
 }
+export interface columnFormat {
+  columnDef: string;//'definition',
+  header: string//'displayed header',
+  cell: Function //(element: ElementType) => '${element.definition}',
+}

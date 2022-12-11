@@ -20,7 +20,7 @@
       </mat-form-field> -->
 
       <!-- Chipped Type selection -->
-      <mat-chip-listbox multiple (change)="changedChips($event)">
+      <mat-chip-listbox  value="All"  (change)="changedChips($event)">
         <mat-chip-option *ngFor="let filter of filters">{{filter.name}}</mat-chip-option>
       </mat-chip-listbox>
 

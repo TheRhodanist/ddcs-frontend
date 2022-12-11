@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Fighters",
+        "categoryKey":"unitAttributes",
+        "categoryValue":"Fighters"
+    },{
+        "name":"MR",
+        "categoryKey":"unitAttributes",
+        "categoryValue":"Multirole fighters"
+    },{
+        "name":"Helicopters",
+        "categoryKey":"unitAttributes",
+        "categoryValue":"Helicopters"
+    },{
+        "name":"Battleplanes",
+        "categoryKey":"unitAttributes",
+        "categoryValue":"Battleplanes"
+    }
+]

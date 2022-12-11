@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Weapon } from 'src/app/services/Interfaces';
-import { categoryFilter } from 'src/app/shared/shared.module';
+import { categoryFilter, columnFormat } from 'src/app/shared/shared.module';
 import { WeaponListService } from './weapon-list.service';
 
 @Component({
@@ -11,6 +11,14 @@ import { WeaponListService } from './weapon-list.service';
 export class WeaponListComponent implements OnInit{
   weapons:Weapon[] = [];
   filters: categoryFilter<Weapon>[] = [];
+  columns: columnFormat[] = [
+    {columnDef:'displayName',header:'Name',cell: (element: any) => {
+      return element.displayName ? element.displayName:element._id
+      }
+    },
+    {columnDef:'warbondKillMultiplier',header:'Multiplier',cell: (element: any) => element.warbondKillMultiplier},
+    {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
+  ];
   constructor(
     private weaponListService: WeaponListService,
   ) {}

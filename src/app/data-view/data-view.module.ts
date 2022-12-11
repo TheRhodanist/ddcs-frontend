@@ -5,8 +5,8 @@ import { DataViewComponent } from './data-view.component';
 import { UnitListComponent } from './unit-list/unit-list.component';
 import { SharedUIModule } from '../shared/shared.module';
 import { OverviewComponent } from './overview/overview.component';
-import { PlanesComponent } from './planes/planes.component';
-import { WeaponsComponent } from './weapons/weapons.component';
+import { PlaneListComponent } from './planes/plane-list.component';
+import { WeaponListComponent } from './weapons/weapon-list.component';
 //Angular Material
 
 
@@ -15,8 +15,8 @@ import { WeaponsComponent } from './weapons/weapons.component';
     DataViewComponent,
     UnitListComponent,
     OverviewComponent,
-    PlanesComponent,
-    WeaponsComponent,
+    PlaneListComponent,
+    WeaponListComponent,
   ],
   imports: [
     DataViewRoutingModule,

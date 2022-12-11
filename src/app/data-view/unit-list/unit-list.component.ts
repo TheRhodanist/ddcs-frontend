@@ -1,13 +1,12 @@
 
 import { Component,OnInit } from '@angular/core';
 import { Unit } from 'src/app/services/Interfaces';
-import { UnitListService } from './unit-list.service';
+import { UnitListService } from '../unit-list.service';
 
 @Component({
   selector: 'app-unit-list',
   templateUrl: './unit-list.component.html',
   styleUrls: ['./unit-list.component.scss'],
-  providers: [ UnitListService ]
 })
 export class UnitListComponent implements OnInit {
   units:Unit[]=[];
@@ -18,7 +17,6 @@ export class UnitListComponent implements OnInit {
     this.unitListService.getUnits()
     .subscribe(units => {
       this.units = units
-      console.log(this.units)
     })
   }
 }

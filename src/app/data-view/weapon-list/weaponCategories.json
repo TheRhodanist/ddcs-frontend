@@ -1,0 +1,27 @@
+[
+    {
+        "name":"SARH",
+        "categoryKey":"guidanceType",
+        "categoryValue":"4"
+    },
+    {
+        "name":"SARH",
+        "categoryKey":"guidanceType",
+        "categoryValue":"3"
+    },
+    {
+        "name":"IR",
+        "categoryKey":"guidanceType",
+        "categoryValue":"2"
+    },
+    {
+        "name":"GPS",
+        "categoryKey":"guidanceType",
+        "categoryValue":"1"
+    },
+    {
+        "name":"Ballistic",
+        "categoryKey":"guidanceType",
+        "categoryValue":"0"
+    }
+]

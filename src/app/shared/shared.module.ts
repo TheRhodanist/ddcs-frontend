@@ -56,3 +56,7 @@ import { FilteredListComponent } from './filtered-list/filtered-list.component';
   ]
 })
 export class SharedUIModule { }
+export interface categoryFilter<T> {
+  name:string,
+  filterFunction: (arg1: T) => boolean,
+}

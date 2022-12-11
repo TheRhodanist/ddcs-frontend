@@ -1,18 +1,25 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
-import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {MatChipEditedEvent, MatChipInputEvent} from '@angular/material/chips';
+import { ChangeDetectionStrategy, Component, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+//import {COMMA, ENTER} from '@angular/cdk/keycodes';
+//import {MatChipEditedEvent, MatChipInputEvent} from '@angular/material/chips';
 import { concatMap, Observable } from 'rxjs';
 import { Unit } from 'src/app/services/Interfaces';
-import { UnitinfoService} from '../../services/unitinfo.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { UnitListService } from 'src/app/data-view/unit-list/unit-list.service';
 
 
-export interface Filter {
-  name:string;
+export interface categoryFilter {
+  name:string,
+  categoryKey:string,
+  categoryValue:string,
 }
-
-
+export interface categoryFilterArray extends Array<categoryFilter> {
+}
+export interface columnFormat {
+  columnDef: string;//'definition',
+  header: string//'displayed header',
+  cell: Function //(element: ElementType) => '${element.definition}',
+}
 @Component({
   selector: 'app-filtered-list',
   templateUrl: './filtered-list.component.html',
@@ -20,86 +27,100 @@ export interface Filter {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FilteredListComponent implements OnInit{
-    addOnBlur = true;
-    readonly separatorKeysCodes = [ENTER, COMMA] as const;
-    filters: Filter[] = [{name: 'Plane'}];
   
-    units: Unit[] = [];
+    addOnBlur = true;
+    //readonly separatorKeysCodes = [ENTER, COMMA] as const;
+    filters: categoryFilterArray = [{name: 'Plane',categoryKey:'unitCategory',categoryValue: '0'}];
+
+  
+    @Input() data: any[] = [];
     fetchedUnits!: Observable<Unit[]>;
     filteredUnits!: Unit[];
-  
-    displayedColumns: string[] = ['_id', 'natoName', 'warbondCost'];
-    dataSource = new MatTableDataSource(this.units);
+    
+    /*
+    * Columns must match this format
+    * {
+    * columnDef: 'definition',
+    * header: 'displayed header',
+    * cell: (element: ElementType) => '${element.definition}',
+    * }
+    */
+    columns: columnFormat[] = [
+      {columnDef:'_id',header:'ID',cell: (element: any) => element._id},
+      {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
+    ];
+    displayedColumns = this.columns.map(c => c.columnDef);
+
+    //displayedColumns: string[] = ['_id', 'natoName', 'warbondCost'];
+    dataSource = new MatTableDataSource(this.data);
     @ViewChild(MatPaginator) paginator!: MatPaginator;
     constructor(
-      private unitService: UnitinfoService,
+      private unitService: UnitListService,
     ) {
       
     }
     ngOnInit(): void {
-      this.fetchedUnits = this.unitService.fetchUnits();
-      this.fetchedUnits.subscribe(units => {
-        this.units = units;
-        this.dataSource.data = units;
-      })
-      this.updateFilteredUnits();
+      this.dataSource.data = this.data;
     }
     ngAfterViewInit() {
       this.dataSource.paginator = this.paginator;
     }
-  
-    /**
-     * 
-     * @param event 
-     */
-    add(event: MatChipInputEvent): void {
-      const value = (event.value || '').trim();
-  
-      // Add our filter
-      if (value) {
-        this.filters.push({name: value});
-      }
-  
-      // Clear the input value
-      event.chipInput!.clear();
-      this.updateFilteredUnits();
+    ngOnChanges(changes: SimpleChanges) {
+      this.dataSource.data = this.data
     }
   
-    /**
-    * 
-    * @param filter 
-    */
-    remove(filter: Filter): void {
-      const index = this.filters.indexOf(filter);
+    // /**
+    //  * 
+    //  * @param event 
+    //  */
+    // add(event: MatChipInputEvent): void {
+    //   const value = (event.value || '').trim();
   
-      if (index >= 0) {
-        this.filters.splice(index, 1);
-      }
-      this.updateFilteredUnits();
-    }
+    //   // Add our filter
+    //   if (value) {
+    //     this.filters.push({name: value});
+    //   }
   
-    /**
-     * 
-     * @param filter 
-     * @param event 
-     * @returns 
-     */
-    edit(filter: Filter, event: MatChipEditedEvent) {
-      const value = event.value.trim();
+    //   // Clear the input value
+    //   event.chipInput!.clear();
+    //   this.updateFilteredUnits();
+    // }
   
-      // Remove filter if it no longer has a name
-      if (!value) {
-        this.remove(filter);
-        return;
-      }
+    // /**
+    // * 
+    // * @param filter 
+    // */
+    // remove(filter: categoryFilter): void {
+    //   const index = this.filters.indexOf(filter);
   
-      // Edit existing filter
-      const index = this.filters.indexOf(filter);
-      if (index > 0) {
-        this.filters[index].name = value;
-      }
-      this.updateFilteredUnits();
-    }
+    //   if (index >= 0) {
+    //     this.filters.splice(index, 1);
+    //   }
+    //   this.updateFilteredUnits();
+    // }
+  
+    // /**
+    //  * 
+    //  * @param filter 
+    //  * @param event 
+    //  * @returns 
+    //  */
+    // edit(filter: categoryFilter, event: MatChipEditedEvent) {
+    //   const value = event.value.trim();
+  
+    //   // Remove filter if it no longer has a name
+    //   if (!value) {
+    //     this.remove(filter);
+    //     return;
+    //   }
+  
+    //   // Edit existing filter
+    //   const index = this.filters.indexOf(filter);
+    //   if (index > 0) {
+    //     this.filters[index].name = value;
+    //   }
+    //   this.updateFilteredUnits();
+    // }
     /**
      * 
      * @param event 
@@ -114,13 +135,13 @@ export class FilteredListComponent implements OnInit{
      */
     updateFilteredUnits(): void {
       //console.log(this.units);
-      this.filteredUnits = this.units.filter(unit => {
+      this.filteredUnits = this.data.filter(element => {
         //console.log(unit)
-        if(unit.hasOwnProperty("unitAttributes")) {
+        if(element.hasOwnProperty("unitAttributes")) {
   
           //for each unit, go into its attributes
           let f = this.filters.filter( filter => {
-            let hasFilteredAttribute = unit.unitAttributes.includes(filter.name);
+            let hasFilteredAttribute = element.unitAttributes.includes(filter.name);
             return hasFilteredAttribute;
           }).length;
           return f>0;

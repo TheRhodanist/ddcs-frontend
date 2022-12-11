@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { UnitinfoService } from './unitinfo.service';
+import { UnitListService } from './unit-list.service';
 
-describe('UnitinfoService', () => {
-  let service: UnitinfoService;
+describe('UnitListService', () => {
+  let service: UnitListService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(UnitinfoService);
+    service = TestBed.inject(UnitListService);
   });
 
   it('should be created', () => {

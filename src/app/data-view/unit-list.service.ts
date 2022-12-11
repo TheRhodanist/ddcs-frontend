@@ -28,7 +28,6 @@ export class UnitListService {
         if(typeof unit.unitAttributes == "undefined") return false;
         return unit.unitAttributes.includes(filter.categoryValue);
       }})
-      console.log(this.groundFilters);
       
     }
   }

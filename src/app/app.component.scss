@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use '../_variables.scss' as theme;
+
 .main-sidebar-container {
     width: 100vw;
     height: 100vh;
@@ -13,9 +16,24 @@
   .main-sidebar {
     padding: 20px;
   }
-
-#main-icon {
+  #main-icon-wrapper {
     position: fixed;
     top: 0;
     left: 0;
+    width: 128px;
+    height: 128px;
+    padding: 10px;
+}
+
+#main-icon {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 118px;
+    height: 118px;
+    border-radius: 10px;
+    background: darken( theme.$my-app-background, 5% );
+}
+#main-icon:hover {
+  background: map-get(theme.$my-app-primary, 500);
 }

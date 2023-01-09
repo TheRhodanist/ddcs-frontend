@@ -19,7 +19,8 @@
     },
     "createdAt" : "2023-01-09T15:55:02.847+0000",
     "updatedAt" : "2023-01-09T15:55:02.847+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279717997_2902256",
@@ -41,7 +42,8 @@
     },
     "createdAt" : "2023-01-09T15:55:17.997+0000",
     "updatedAt" : "2023-01-09T15:55:17.997+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279731581_2691415",
@@ -82,7 +84,8 @@
     "weapon_name" : "weapons.bombs.GBU_12",
     "createdAt" : "2023-01-09T15:55:31.582+0000",
     "updatedAt" : "2023-01-09T15:55:31.582+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279786917_1666938",
@@ -101,7 +104,8 @@
     },
     "createdAt" : "2023-01-09T15:56:26.917+0000",
     "updatedAt" : "2023-01-09T15:56:26.917+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279796998_4598666",
@@ -123,7 +127,8 @@
     },
     "createdAt" : "2023-01-09T15:56:36.999+0000",
     "updatedAt" : "2023-01-09T15:56:36.999+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279799078_5643414",
@@ -145,7 +150,8 @@
     },
     "createdAt" : "2023-01-09T15:56:39.078+0000",
     "updatedAt" : "2023-01-09T15:56:39.078+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279803554_7813511",
@@ -167,7 +173,8 @@
     },
     "createdAt" : "2023-01-09T15:56:43.555+0000",
     "updatedAt" : "2023-01-09T15:56:43.555+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279837668_2158457",
@@ -200,7 +207,8 @@
     "weapon_name" : "_GBU_12",
     "createdAt" : "2023-01-09T15:57:17.669+0000",
     "updatedAt" : "2023-01-09T15:57:17.669+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279855115_6668265",
@@ -230,7 +238,8 @@
     },
     "createdAt" : "2023-01-09T15:57:35.116+0000",
     "updatedAt" : "2023-01-09T15:57:35.116+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279880042_2504143",
@@ -264,7 +273,8 @@
     "weapon_name" : "_FIM_92C",
     "createdAt" : "2023-01-09T15:58:00.042+0000",
     "updatedAt" : "2023-01-09T15:58:00.042+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279888812_8086956",
@@ -297,7 +307,8 @@
     "weapon_name" : "_GB-6-HE",
     "createdAt" : "2023-01-09T15:58:08.812+0000",
     "updatedAt" : "2023-01-09T15:58:08.812+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279950537_4763634",
@@ -319,7 +330,8 @@
     },
     "createdAt" : "2023-01-09T15:59:10.540+0000",
     "updatedAt" : "2023-01-09T15:59:10.540+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673279985379_4429318",
@@ -360,7 +372,8 @@
     "weapon_name" : "weapons.bombs.GBU_12",
     "createdAt" : "2023-01-09T15:59:45.379+0000",
     "updatedAt" : "2023-01-09T15:59:45.379+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "aeff4a8d0808080527af2bf3c8e90728Mon Jan 09 2023 16:00:28 GMT+0000 (Greenwich Mean Time)",
@@ -374,7 +387,8 @@
     "showInChart" : true,
     "createdAt" : "2023-01-09T16:00:28.442+0000",
     "updatedAt" : "2023-01-09T16:00:28.442+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280048212_5918568",
@@ -396,7 +410,8 @@
     },
     "createdAt" : "2023-01-09T16:00:48.214+0000",
     "updatedAt" : "2023-01-09T16:00:48.214+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280073731_3987701",
@@ -418,7 +433,8 @@
     },
     "createdAt" : "2023-01-09T16:01:13.731+0000",
     "updatedAt" : "2023-01-09T16:01:13.731+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280074681_7775620",
@@ -440,7 +456,8 @@
     },
     "createdAt" : "2023-01-09T16:01:14.681+0000",
     "updatedAt" : "2023-01-09T16:01:14.681+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280084813_8796703",
@@ -481,7 +498,8 @@
     "weapon_name" : "weapons.missiles.Ataka_9M120",
     "createdAt" : "2023-01-09T16:01:24.814+0000",
     "updatedAt" : "2023-01-09T16:01:24.814+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280095544_2824398",
@@ -511,7 +529,8 @@
     },
     "createdAt" : "2023-01-09T16:01:35.545+0000",
     "updatedAt" : "2023-01-09T16:01:35.545+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280095690_8985766",
@@ -538,7 +557,8 @@
     },
     "createdAt" : "2023-01-09T16:01:35.691+0000",
     "updatedAt" : "2023-01-09T16:01:35.691+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280103865_4503426",
@@ -580,7 +600,8 @@
     "weapon_name" : "weapons.missiles.Ataka_9M120",
     "createdAt" : "2023-01-09T16:01:43.866+0000",
     "updatedAt" : "2023-01-09T16:01:43.866+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280109995_1516826",
@@ -613,7 +634,8 @@
     "weapon_name" : "_GBU_12",
     "createdAt" : "2023-01-09T16:01:49.996+0000",
     "updatedAt" : "2023-01-09T16:01:49.996+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280174541_1992302",
@@ -643,7 +665,8 @@
     },
     "createdAt" : "2023-01-09T16:02:54.542+0000",
     "updatedAt" : "2023-01-09T16:02:54.542+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280203147_3777830",
@@ -670,7 +693,8 @@
     },
     "createdAt" : "2023-01-09T16:03:23.147+0000",
     "updatedAt" : "2023-01-09T16:03:23.147+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280212318_9179268",
@@ -711,7 +735,8 @@
     "weapon_name" : "weapons.missiles.Ataka_9M120",
     "createdAt" : "2023-01-09T16:03:32.319+0000",
     "updatedAt" : "2023-01-09T16:03:32.319+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280220207_8300859",
@@ -738,7 +763,8 @@
     },
     "createdAt" : "2023-01-09T16:03:40.207+0000",
     "updatedAt" : "2023-01-09T16:03:40.207+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280227419_9677644",
@@ -779,7 +805,8 @@
     "weapon_name" : "weapons.missiles.Ataka_9M120",
     "createdAt" : "2023-01-09T16:03:47.419+0000",
     "updatedAt" : "2023-01-09T16:03:47.419+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280237554_7001190",
@@ -806,7 +833,8 @@
     },
     "createdAt" : "2023-01-09T16:03:57.555+0000",
     "updatedAt" : "2023-01-09T16:03:57.555+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280242702_2129878",
@@ -847,7 +875,8 @@
     "weapon_name" : "weapons.missiles.Ataka_9M120",
     "createdAt" : "2023-01-09T16:04:02.702+0000",
     "updatedAt" : "2023-01-09T16:04:02.702+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280256409_8478169",
@@ -877,7 +906,8 @@
     },
     "createdAt" : "2023-01-09T16:04:16.411+0000",
     "updatedAt" : "2023-01-09T16:04:16.411+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280260398_1748068",
@@ -907,7 +937,8 @@
     },
     "createdAt" : "2023-01-09T16:04:20.399+0000",
     "updatedAt" : "2023-01-09T16:04:20.399+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280277506_4693791",
@@ -937,7 +968,8 @@
     },
     "createdAt" : "2023-01-09T16:04:37.507+0000",
     "updatedAt" : "2023-01-09T16:04:37.507+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280297166_5213975",
@@ -967,7 +999,8 @@
     },
     "createdAt" : "2023-01-09T16:04:57.167+0000",
     "updatedAt" : "2023-01-09T16:04:57.167+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280312481_8613918",
@@ -997,7 +1030,8 @@
     },
     "createdAt" : "2023-01-09T16:05:12.484+0000",
     "updatedAt" : "2023-01-09T16:05:12.484+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280482296_5664660",
@@ -1016,7 +1050,8 @@
     },
     "createdAt" : "2023-01-09T16:08:02.297+0000",
     "updatedAt" : "2023-01-09T16:08:02.297+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280491085_6521501",
@@ -1035,7 +1070,8 @@
     },
     "createdAt" : "2023-01-09T16:08:11.085+0000",
     "updatedAt" : "2023-01-09T16:08:11.085+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280498018_1547351",
@@ -1054,7 +1090,8 @@
     },
     "createdAt" : "2023-01-09T16:08:18.020+0000",
     "updatedAt" : "2023-01-09T16:08:18.020+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280503301_2983553",
@@ -1073,7 +1110,8 @@
     },
     "createdAt" : "2023-01-09T16:08:23.302+0000",
     "updatedAt" : "2023-01-09T16:08:23.302+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280510366_8844413",
@@ -1092,7 +1130,8 @@
     },
     "createdAt" : "2023-01-09T16:08:30.366+0000",
     "updatedAt" : "2023-01-09T16:08:30.366+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280514038_5143983",
@@ -1111,7 +1150,8 @@
     },
     "createdAt" : "2023-01-09T16:08:34.038+0000",
     "updatedAt" : "2023-01-09T16:08:34.038+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280517625_9527731",
@@ -1145,7 +1185,8 @@
     "weapon_name" : "_M2_Browning",
     "createdAt" : "2023-01-09T16:08:37.625+0000",
     "updatedAt" : "2023-01-09T16:08:37.625+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280529266_4671309",
@@ -1179,7 +1220,8 @@
     "weapon_name" : "_",
     "createdAt" : "2023-01-09T16:08:49.266+0000",
     "updatedAt" : "2023-01-09T16:08:49.266+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "923ab1e7082c7a7a201b8502a8c2998cMon Jan 09 2023 16:08:49 GMT+0000 (Greenwich Mean Time)",
@@ -1193,7 +1235,8 @@
     "showInChart" : true,
     "createdAt" : "2023-01-09T16:08:49.987+0000",
     "updatedAt" : "2023-01-09T16:08:49.987+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280534376_2664228",
@@ -1212,7 +1255,8 @@
     },
     "createdAt" : "2023-01-09T16:08:54.376+0000",
     "updatedAt" : "2023-01-09T16:08:54.376+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280544180_9936932",
@@ -1231,7 +1275,8 @@
     },
     "createdAt" : "2023-01-09T16:09:04.181+0000",
     "updatedAt" : "2023-01-09T16:09:04.181+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280548137_2646340",
@@ -1261,7 +1306,8 @@
     },
     "createdAt" : "2023-01-09T16:09:08.137+0000",
     "updatedAt" : "2023-01-09T16:09:08.137+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280548390_6578112",
@@ -1280,7 +1326,8 @@
     },
     "createdAt" : "2023-01-09T16:09:08.391+0000",
     "updatedAt" : "2023-01-09T16:09:08.391+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280551003_7895917",
@@ -1299,7 +1346,8 @@
     },
     "createdAt" : "2023-01-09T16:09:11.003+0000",
     "updatedAt" : "2023-01-09T16:09:11.003+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280553030_4623907",
@@ -1318,7 +1366,8 @@
     },
     "createdAt" : "2023-01-09T16:09:13.031+0000",
     "updatedAt" : "2023-01-09T16:09:13.031+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280555472_4095435",
@@ -1337,7 +1386,8 @@
     },
     "createdAt" : "2023-01-09T16:09:15.472+0000",
     "updatedAt" : "2023-01-09T16:09:15.472+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280557933_3993439",
@@ -1356,7 +1406,8 @@
     },
     "createdAt" : "2023-01-09T16:09:17.933+0000",
     "updatedAt" : "2023-01-09T16:09:17.933+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280562286_4379221",
@@ -1375,7 +1426,8 @@
     },
     "createdAt" : "2023-01-09T16:09:22.287+0000",
     "updatedAt" : "2023-01-09T16:09:22.287+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280564533_2522652",
@@ -1394,7 +1446,8 @@
     },
     "createdAt" : "2023-01-09T16:09:24.533+0000",
     "updatedAt" : "2023-01-09T16:09:24.533+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280565803_5625455",
@@ -1424,7 +1477,8 @@
     },
     "createdAt" : "2023-01-09T16:09:25.804+0000",
     "updatedAt" : "2023-01-09T16:09:25.804+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280566577_2151083",
@@ -1443,7 +1497,8 @@
     },
     "createdAt" : "2023-01-09T16:09:26.578+0000",
     "updatedAt" : "2023-01-09T16:09:26.578+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280569433_9825657",
@@ -1473,7 +1528,8 @@
     },
     "createdAt" : "2023-01-09T16:09:29.433+0000",
     "updatedAt" : "2023-01-09T16:09:29.433+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280569800_5663106",
@@ -1492,7 +1548,8 @@
     },
     "createdAt" : "2023-01-09T16:09:29.800+0000",
     "updatedAt" : "2023-01-09T16:09:29.800+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280572973_1747292",
@@ -1511,7 +1568,8 @@
     },
     "createdAt" : "2023-01-09T16:09:32.974+0000",
     "updatedAt" : "2023-01-09T16:09:32.974+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280573099_2170696",
@@ -1541,7 +1599,8 @@
     },
     "createdAt" : "2023-01-09T16:09:33.100+0000",
     "updatedAt" : "2023-01-09T16:09:33.100+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280580433_1939457",
@@ -1571,7 +1630,8 @@
     },
     "createdAt" : "2023-01-09T16:09:40.433+0000",
     "updatedAt" : "2023-01-09T16:09:40.433+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280588057_4199318",
@@ -1608,7 +1668,8 @@
     "weapon_name" : "weapons.missiles.AGM_65D",
     "createdAt" : "2023-01-09T16:09:48.057+0000",
     "updatedAt" : "2023-01-09T16:09:48.057+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280594026_3585320",
@@ -1627,7 +1688,8 @@
     },
     "createdAt" : "2023-01-09T16:09:54.026+0000",
     "updatedAt" : "2023-01-09T16:09:54.026+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280597316_9435879",
@@ -1646,7 +1708,8 @@
     },
     "createdAt" : "2023-01-09T16:09:57.318+0000",
     "updatedAt" : "2023-01-09T16:09:57.318+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280597691_2370038",
@@ -1679,7 +1742,8 @@
     "weapon_name" : "_AGM_65D",
     "createdAt" : "2023-01-09T16:09:57.692+0000",
     "updatedAt" : "2023-01-09T16:09:57.692+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280599623_3987955",
@@ -1712,7 +1776,8 @@
     "weapon_name" : "_AGM_65D",
     "createdAt" : "2023-01-09T16:09:59.623+0000",
     "updatedAt" : "2023-01-09T16:09:59.623+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280599811_5459405",
@@ -1731,7 +1796,8 @@
     },
     "createdAt" : "2023-01-09T16:09:59.812+0000",
     "updatedAt" : "2023-01-09T16:09:59.812+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280602112_8515575",
@@ -1764,7 +1830,8 @@
     "weapon_name" : "_AGM_65D",
     "createdAt" : "2023-01-09T16:10:02.113+0000",
     "updatedAt" : "2023-01-09T16:10:02.113+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280604218_7086638",
@@ -1783,7 +1850,8 @@
     },
     "createdAt" : "2023-01-09T16:10:04.218+0000",
     "updatedAt" : "2023-01-09T16:10:04.218+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280609722_9598096",
@@ -1816,7 +1884,8 @@
     "weapon_name" : "_AGM_65D",
     "createdAt" : "2023-01-09T16:10:09.722+0000",
     "updatedAt" : "2023-01-09T16:10:09.722+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280629274_5197184",
@@ -1838,7 +1907,8 @@
     },
     "createdAt" : "2023-01-09T16:10:29.275+0000",
     "updatedAt" : "2023-01-09T16:10:29.275+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280632016_7578595",
@@ -1857,7 +1927,8 @@
     },
     "createdAt" : "2023-01-09T16:10:32.017+0000",
     "updatedAt" : "2023-01-09T16:10:32.017+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280634850_9010476",
@@ -1876,7 +1947,8 @@
     },
     "createdAt" : "2023-01-09T16:10:34.851+0000",
     "updatedAt" : "2023-01-09T16:10:34.851+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280639249_3387076",
@@ -1898,7 +1970,8 @@
     },
     "createdAt" : "2023-01-09T16:10:39.249+0000",
     "updatedAt" : "2023-01-09T16:10:39.249+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280644984_2190164",
@@ -1917,7 +1990,8 @@
     },
     "createdAt" : "2023-01-09T16:10:44.984+0000",
     "updatedAt" : "2023-01-09T16:10:44.984+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280650050_3375952",
@@ -1936,7 +2010,8 @@
     },
     "createdAt" : "2023-01-09T16:10:50.050+0000",
     "updatedAt" : "2023-01-09T16:10:50.050+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280653132_8662503",
@@ -1955,7 +2030,8 @@
     },
     "createdAt" : "2023-01-09T16:10:53.134+0000",
     "updatedAt" : "2023-01-09T16:10:53.134+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280659204_7116132",
@@ -1974,7 +2050,8 @@
     },
     "createdAt" : "2023-01-09T16:10:59.205+0000",
     "updatedAt" : "2023-01-09T16:10:59.205+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280679111_2128421",
@@ -1993,7 +2070,8 @@
     },
     "createdAt" : "2023-01-09T16:11:19.112+0000",
     "updatedAt" : "2023-01-09T16:11:19.112+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280681153_2720204",
@@ -2012,7 +2090,8 @@
     },
     "createdAt" : "2023-01-09T16:11:21.153+0000",
     "updatedAt" : "2023-01-09T16:11:21.153+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280683238_3694250",
@@ -2031,7 +2110,8 @@
     },
     "createdAt" : "2023-01-09T16:11:23.239+0000",
     "updatedAt" : "2023-01-09T16:11:23.239+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "fcdb22f3e54ae890392038ea86b2d740Mon Jan 09 2023 16:11:23 GMT+0000 (Greenwich Mean Time)",
@@ -2045,7 +2125,8 @@
     "showInChart" : true,
     "createdAt" : "2023-01-09T16:11:23.582+0000",
     "updatedAt" : "2023-01-09T16:11:23.582+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280686739_9012397",
@@ -2075,7 +2156,8 @@
     },
     "createdAt" : "2023-01-09T16:11:26.740+0000",
     "updatedAt" : "2023-01-09T16:11:26.740+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280715371_6664542",
@@ -2108,7 +2190,8 @@
     "weapon_name" : "_AGM_65D",
     "createdAt" : "2023-01-09T16:11:55.371+0000",
     "updatedAt" : "2023-01-09T16:11:55.371+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280718696_7078790",
@@ -2135,7 +2218,8 @@
     },
     "createdAt" : "2023-01-09T16:11:58.696+0000",
     "updatedAt" : "2023-01-09T16:11:58.696+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280718704_9072715",
@@ -2162,7 +2246,8 @@
     },
     "createdAt" : "2023-01-09T16:11:58.704+0000",
     "updatedAt" : "2023-01-09T16:11:58.704+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280719173_9085115",
@@ -2204,7 +2289,8 @@
     "weapon_name" : "weapons.missiles.AGM_88",
     "createdAt" : "2023-01-09T16:11:59.174+0000",
     "updatedAt" : "2023-01-09T16:11:59.174+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280722803_2786614",
@@ -2237,7 +2323,8 @@
     "weapon_name" : "_AGM_88",
     "createdAt" : "2023-01-09T16:12:02.803+0000",
     "updatedAt" : "2023-01-09T16:12:02.803+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 },
 {
     "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280729242_2512957",
@@ -2256,5 +2343,6 @@
     },
     "createdAt" : "2023-01-09T16:12:09.243+0000",
     "updatedAt" : "2023-01-09T16:12:09.243+0000",
-    "__v" : 0
+    "__v" : 0,
+    "campaignId" : 1
 }]

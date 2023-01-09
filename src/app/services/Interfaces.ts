@@ -25,14 +25,14 @@
 
 export interface Events {
     _id:                 string;
-    sessionName:         SessionName;
-    eventCode:           EventCode;
-    showInChart:         boolean;
+    sessionName:         string;
+    eventCode?:           EventCode;
+    showInChart?:         boolean;
     initiator?:          Initiator;
     weapon?:             EventWeapon;
     createdAt:           string;
     updatedAt:           string;
-    __v:                 number;
+    __v?:                 number;
     score?:              number;
     target?:             Initiator;
     killer?:             string;
@@ -40,13 +40,14 @@ export interface Events {
     killerControlledBy?: string;
     victim?:             string;
     victimType?:         string;
-    victimControlledBy?: VictimControlledBy;
+    victimControlledBy?: string;
     weapon_name?:        string;
     iucid?:              string;
     iName?:              string;
     displaySide?:        string;
     roleCode?:           string;
     msg?:                string;
+    campaignId?:          number;
 }
 
 export enum EventCode {
@@ -62,17 +63,6 @@ export interface Initiator {
     side:     number;
     type:     string;
     unitId:   number;
-}
-
-export enum SessionName {
-    DrexMainServerDDCSModernSyria1673277253000 = "DrexMainServer_DDCS-Modern-Syria_1673277253000",
-}
-
-export enum VictimControlledBy {
-    AI = "AI",
-    Cahoot = "Cahoot",
-    IDValkyr = "[.ID] Valkyr",
-    SlDEWINDER = "SlDEWINDER",
 }
 
 export interface EventWeapon {

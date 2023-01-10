@@ -1,0 +1,28 @@
+[
+    {
+        "_id" : "camp1",
+        "campaignId" : 1,
+        "totalMinutesPlayed_blue" : 1,
+        "totalMinutesPlayed_red" : 1,
+        "createdAt" : "2022-01-09T16:00:48.214+0000",
+        "updatedAt" : "2022-01-09T16:00:48.214+0000",
+        "endedAt"   : "2023-01-10T16:00:48.214+0000"
+    },
+    {
+        "_id" : "camp2",
+        "campaignId" : 2,
+        "totalMinutesPlayed_blue" : 3,
+        "totalMinutesPlayed_red" : 5,
+        "createdAt" : "2023-01-10T16:00:48.214+0000",
+        "updatedAt" : "2023-01-10T16:00:48.214+0000",
+        "endedAt"   : "2023-01-20T16:00:48.214+0000"
+    },
+    {
+        "_id" : "camp3",
+        "campaignId" : 3,
+        "totalMinutesPlayed_blue" : 3,
+        "totalMinutesPlayed_red" : 5,
+        "createdAt" : "2023-01-20T16:00:48.214+0000",
+        "updatedAt" : "2023-01-20T16:00:48.214+0000"
+    }
+]

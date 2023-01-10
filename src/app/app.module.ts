@@ -10,13 +10,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { DashboardComponent } from './routing-components/dashboard/dashboard.component';
 import { SharedUIModule } from './shared/shared.module';
-import { CampaignViewModule } from './campaign-view/campaign-view.module';
+import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/campaign-detail-view/campaign-detail-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     DashboardComponent,
+    CampaignDetailViewComponent,
     
   ],
   imports: [
@@ -25,7 +26,6 @@ import { CampaignViewModule } from './campaign-view/campaign-view.module';
     BrowserAnimationsModule,
     HttpClientModule,
     SharedUIModule,
-    CampaignViewModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

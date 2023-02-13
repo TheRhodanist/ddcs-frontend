@@ -141,7 +141,7 @@ export class FilteredListComponent<T> implements OnInit{
     //   this.updateFilteredUnits();
     // }
     /**
-     * 
+     * Takes the input from an event-driven html-element and uses it as filter for the datasource
      * @param event 
      */
     applyFilter(event: Event) {

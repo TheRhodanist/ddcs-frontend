@@ -14,12 +14,14 @@ import {MatPaginatorModule} from '@angular/material/paginator'
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FilteredListComponent } from './filtered-list/filtered-list.component';
+import { EventListComponent } from './event-list/event-list.component';
 
 
 
 @NgModule({
   declarations: [
-    FilteredListComponent
+    FilteredListComponent,
+    EventListComponent
   ],
   imports: [
     CommonModule,
@@ -53,6 +55,7 @@ import { FilteredListComponent } from './filtered-list/filtered-list.component';
     MatCardModule,
     MatTabsModule,
     FilteredListComponent,
+    EventListComponent,
   ]
 })
 export class SharedUIModule { }

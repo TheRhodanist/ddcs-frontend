@@ -6,6 +6,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatChipListboxChange } from '@angular/material/chips';
 import { categoryFilter, columnFormat } from '../shared.module';
+import { CampaignEvent } from '../Interfaces';
 
 @Component({
   selector: 'app-event-list',
@@ -17,8 +18,18 @@ export class EventListComponent<T> implements OnInit{
   addOnBlur = true;
 
   @Input() columns: columnFormat[] = [
-    {columnDef:'_id',header:'ID',cell: (element: any) => element._id},
-    {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
+    {columnDef:'code',header:'Code',cell: (element: CampaignEvent) => element.eventCode},
+    {columnDef:'weapon',header:'Weapon',cell: (element: CampaignEvent) => {
+    if(element.weapon?.displayName !=undefined) return element.weapon.displayName;
+    return element.weapon_name; //check if the "nice" weapon name is available, if not use default
+    }},
+    {columnDef:'score',header:'Score',cell: (element: CampaignEvent) => element.score},
+    {columnDef:'killer',header:'Killer',cell: (element: CampaignEvent) => element.killer},
+    {columnDef:'killerType',header:'Type',cell: (element: CampaignEvent) => element.killerType},
+    {columnDef:'killerControl',header:'Controlled',cell: (element: CampaignEvent) => element.killerControlledBy},
+    {columnDef:'victim',header:'Victim',cell: (element: CampaignEvent) => element.victim},
+    {columnDef:'victimType',header:'Type',cell: (element: CampaignEvent) => element.victimType},
+    {columnDef:'victimControl',header:'Controlled',cell: (element: CampaignEvent) => element.victimControlledBy},
   ];
   displayedColumns = this.columns.map(c => c.columnDef);
 
@@ -51,7 +62,7 @@ export class EventListComponent<T> implements OnInit{
      * A function that updates the currently displayed data according to the active filters
      */
     update():void {
-      this.dataSource.data = [];
+      this.dataSource.data = this.data;
       for (const filter of this.activeFilters) {
         //console.log(filter);
         

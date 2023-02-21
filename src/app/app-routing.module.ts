@@ -6,13 +6,8 @@ import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/cam
 
 const routes: Routes = [
   { path: 'data', loadChildren: () => import('./data-view/data-view.module').then(m => m.DataViewModule) },
-  {
-    path: 'campaigns', 
-    component: CampaignChooserComponent,
-    children: [
-      { path: 'childpath', component: CampaignDetailViewComponent }
-    ]
-  },
+  { path: 'campaigns', component: CampaignChooserComponent },    
+  { path: 'campaign/:id', component: CampaignDetailViewComponent },
   { path: '**', component: DashboardComponent },
 ];
 

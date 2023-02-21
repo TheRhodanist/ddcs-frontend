@@ -1,0 +1,56 @@
+[
+    
+{
+    "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280722803_2786614",
+    "sessionName" : "DrexMainServer_DDCS-Modern-Syria_1673277253000",
+    "eventCode" : "KILL",
+    "score" : 87,
+    "showInChart" : false,
+    "initiator" : {
+        "category" : 1,
+        "groupId" : 5647,
+        "side" : 1,
+        "type" : "F-16C_50",
+        "unitId" : 6601
+    },
+    "target" : {
+        "category" : 1,
+        "side" : 2,
+        "type" : "Hawk cwar",
+        "unitId" : 1003219
+    },
+    "weapon" : {
+        "weapon_name" : "AGM_88"
+    },
+    "killer" : "-=Aed=- 298",
+    "killerType" : "F-16C_50",
+    "killerControlledBy" : "-=Aed=- 298",
+    "victim" : "Unknown",
+    "victimType" : "Hawk cwar",
+    "victimControlledBy" : "AI",
+    "weapon_name" : "_AGM_88",
+    "createdAt" : "2023-01-09T16:12:02.803+0000",
+    "updatedAt" : "2023-01-09T16:12:02.803+0000",
+    "__v" : 0,
+    "campaignId" : 1
+},
+{
+    "_id" : "DrexMainServer_DDCS-Modern-Syria_1673277253000_1673280729242_2512957",
+    "sessionName" : "DrexMainServer_DDCS-Modern-Syria_1673277253000",
+    "eventCode" : "SHOOTING_START",
+    "showInChart" : false,
+    "initiator" : {
+        "category" : 1,
+        "groupId" : 1002925,
+        "side" : 2,
+        "type" : "M1126 Stryker ICV",
+        "unitId" : 1002926
+    },
+    "weapon" : {
+        "weapon_name" : "M2_Browning"
+    },
+    "createdAt" : "2023-01-09T16:12:09.243+0000",
+    "updatedAt" : "2023-01-09T16:12:09.243+0000",
+    "__v" : 0,
+    "campaignId" : 1
+}]

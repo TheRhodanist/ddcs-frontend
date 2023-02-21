@@ -1,1 +1,28 @@
-<p>campaign-chooser works!</p>
+<h1>List of DDCS campaigns(Click one to view its events)</h1>
+
+<table mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="campaignId">
+        <th mat-header-cell *matHeaderCellDef> Campaign-ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.campaignId}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="redMinutes">
+        <th mat-header-cell *matHeaderCellDef> Minutes Red </th>
+        <td mat-cell *matCellDef="let row"> {{row.totalMinutesPlayed_red}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="blueMinutes">
+        <th mat-header-cell *matHeaderCellDef> Minutes Blue </th>
+        <td mat-cell *matCellDef="let row"> {{row.totalMinutesPlayed_blue}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id </th>
+        <td mat-cell *matCellDef="let row"> {{row._id}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['campaignId', 'redMinutes', 'blueMinutes', 'id']"></tr>
+    <tr mat-row matRipple [routerLink]="['/campaign', row.campaignId]" *matRowDef="let row; columns: ['campaignId', 'redMinutes', 'blueMinutes', 'id'];"
+    ></tr>
+    </table>

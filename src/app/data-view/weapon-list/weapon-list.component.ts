@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Weapon } from 'src/app/services/Interfaces';
+import { Weapon } from 'src/app/shared/Interfaces';
 import { categoryFilter, columnFormat } from 'src/app/shared/shared.module';
 import { WeaponListService } from './weapon-list.service';
 

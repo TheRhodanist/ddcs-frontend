@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Unit } from 'src/app/services/Interfaces';
+import { Unit } from 'src/app/shared/Interfaces';
 import { categoryFilter, columnFormat } from 'src/app/shared/shared.module';
 import { UnitListService } from '../unit-list.service';
 

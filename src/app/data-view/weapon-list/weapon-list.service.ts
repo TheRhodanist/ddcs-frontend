@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Output } from '@angular/core';
-import { Weapon } from 'src/app/services/Interfaces';
+import { Weapon } from 'src/app/shared/Interfaces';
 import { categoryFilter } from 'src/app/shared/shared.module';
 import weaponCategories from "./weaponCategories.json"
 

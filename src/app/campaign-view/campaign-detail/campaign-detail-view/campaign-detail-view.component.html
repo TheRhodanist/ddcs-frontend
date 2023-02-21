@@ -1,1 +1,9 @@
-<p>campaign-detail-view works!</p>
+<!-- TODO make it actually change styles to indicate the hover/interactive state -->
+<mat-card style="max-width: 200px;" [routerLink]="['/campaigns']" >
+    <mat-card-content class="cardWithIcon">
+        <mat-icon>expand_less</mat-icon>campaigns
+    </mat-card-content>    
+</mat-card>
+
+<h1>Events for the campaign: {{id}}</h1>
+<app-event-list [data]="events" ></app-event-list>

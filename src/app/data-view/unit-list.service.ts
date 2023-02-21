@@ -1,17 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Unit } from 'src/app/services/Interfaces';
+import { Unit } from 'src/app/shared/Interfaces';
 import { categoryFilter } from '../shared/shared.module';
 import groundUnitCategories from './groundUnitCategories.json';
 import planeUnitCategories from './planeUnitCategories.json';
 
 @Injectable()
 export class UnitListService {
+
   private importedGroundFilters = groundUnitCategories;
   private importedPlaneFilters = planeUnitCategories;
   groundFilters: categoryFilter<Unit>[] = [{"name":"All","filterFunction":(unit:Unit) => true}];
   planeFilters: categoryFilter<Unit>[] = [{"name":"All","filterFunction":(unit:Unit) => true}];
+
   units: Unit[] = [];
+  
   constructor(
     private http: HttpClient,
   ) { }

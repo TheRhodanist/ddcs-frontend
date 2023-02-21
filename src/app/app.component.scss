@@ -37,3 +37,12 @@
 #main-icon:hover {
   background: map-get(theme.$my-app-primary, 500);
 }
+.cardWithIcon {
+  display: flex;
+  align-items: center;
+  
+}
+.cardWithIcon:hover {
+  background: darken( theme.$my-app-background, 2% );
+}
+

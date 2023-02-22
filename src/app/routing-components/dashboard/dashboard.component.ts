@@ -8,10 +8,11 @@ import { Campaign } from 'src/app/shared/Interfaces';
 })
 export class DashboardComponent implements OnInit{
   currentCampaign?:Campaign = undefined;
+  manager?:CampaignManagmentService = undefined;
 
   constructor(
     private campaignManager:CampaignManagmentService,
-  ) {}
+  ) {this.manager = campaignManager}
 
     ngOnInit(): void {
         this.campaignManager.getCampaigns().subscribe(

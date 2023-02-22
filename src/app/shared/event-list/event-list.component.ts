@@ -7,6 +7,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatChipListboxChange } from '@angular/material/chips';
 import { categoryFilter, columnFormat } from '../shared.module';
 import { CampaignEvent } from '../Interfaces';
+import { CampaignManagmentService } from '../campaign-managment.service';
 
 @Component({
   selector: 'app-event-list',
@@ -18,7 +19,6 @@ export class EventListComponent<T> implements OnInit{
   addOnBlur = true;
 
   @Input() columns: columnFormat[] = [
-    {columnDef:'code',header:'Code',cell: (element: CampaignEvent) => element.eventCode},
     {columnDef:'weapon',header:'Weapon',cell: (element: CampaignEvent) => {
     if(element.weapon?.displayName !=undefined) return element.weapon.displayName;
     return element.weapon_name; //check if the "nice" weapon name is available, if not use default
@@ -30,6 +30,8 @@ export class EventListComponent<T> implements OnInit{
     {columnDef:'victim',header:'Victim',cell: (element: CampaignEvent) => element.victim},
     {columnDef:'victimType',header:'Type',cell: (element: CampaignEvent) => element.victimType},
     {columnDef:'victimControl',header:'Controlled',cell: (element: CampaignEvent) => element.victimControlledBy},
+    {columnDef:'eventTime',header:'Time UTC',cell: (element: CampaignEvent) => this.getDatefromEpoch(element.eventTime)},
+
   ];
   displayedColumns = this.columns.map(c => c.columnDef);
 
@@ -44,7 +46,7 @@ export class EventListComponent<T> implements OnInit{
      * 
      */
     constructor(
-
+      private campaignManager:CampaignManagmentService,
     ) { }
     ngOnInit(): void {
       this.update();
@@ -80,4 +82,10 @@ export class EventListComponent<T> implements OnInit{
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+
+  getDatefromEpoch(epoch:string):string {
+    let date = new Date(Number(epoch));
+    return date.toLocaleString('en-GB', { timeZone: 'UTC' });
+  }
+
 }

@@ -25,7 +25,7 @@
 
 export interface Campaign {
     _id:                     string;
-    campaignId?:              number;
+    campaignId?:              string;
     totalMinutesPlayed_blue: number;
     totalMinutesPlayed_red:  number;
     createdAt:               string;
@@ -37,7 +37,7 @@ export interface Campaign {
 export interface CampaignEvent {
     _id:                 string;
     sessionName:         string;
-    eventCode?:           EventCode;
+    eventTime:           string;
     showInChart?:         boolean;
     initiator?:          Initiator;
     weapon?:             EventWeapon;
@@ -58,7 +58,7 @@ export interface CampaignEvent {
     displaySide?:        string;
     roleCode?:           string;
     msg?:                string;
-    campaignId?:          number;
+    campaign?:          string;
 }
 
 export enum EventCode {

@@ -6,18 +6,18 @@
 </mat-card-content>
 
 <mat-card >
-    <mat-card-header [routerLink]="['/campaign',currentCampaign?.campaignId]"><h3>Current Campaign</h3> <mat-icon>arrow_right</mat-icon></mat-card-header>
+    <mat-card-header [routerLink]="['/campaign',manager!.getId(currentCampaign?._id!.toString())]"><h3>Current Campaign</h3> <mat-icon>arrow_right</mat-icon></mat-card-header>
     <mat-card-content>
         <table style="border-spacing: 10px">
             <tr>
                 <th>ID</th>
-                <th>Name</th>
+                <th>Map</th>
                 <th>Minutes Red</th>
                 <th>Minutes Blue</th>
             </tr>
             <tr>
-                <td>{{currentCampaign?.campaignId}}</td>
-                <td>{{currentCampaign?._id}}</td>
+                <td>{{manager?.getId(currentCampaign?._id!.toString())}}</td>
+                <td>{{manager?.getMap(currentCampaign?._id!.toString())}}</td>
                 <td>{{currentCampaign?.totalMinutesPlayed_red}}</td>
                 <td>{{currentCampaign?.totalMinutesPlayed_blue}}</td>
             </tr>

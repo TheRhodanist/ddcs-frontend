@@ -25,7 +25,7 @@ export class CampaignEventService {
    */
   loadCampaignById(id: number) {
     this.id = id;
-    this.http.get<CampaignEvent[]>("/assets/events_"+id+".json").subscribe(
+    this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").subscribe(
       events => {
         this.events = events;
         this.buildArrays();
@@ -34,11 +34,11 @@ export class CampaignEventService {
   }
 
   getEvents():Observable<CampaignEvent[]> {
-    return this.http.get<CampaignEvent[]>("/assets/events_"+this.id+".json");
+    return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json");
   }
 
   buildArrays():void {
-    this.killEvents = this.events.filter(element => element.eventCode == "KILL")
+    this.killEvents = this.events
   }
 
   getKillEvents():CampaignEvent[] {

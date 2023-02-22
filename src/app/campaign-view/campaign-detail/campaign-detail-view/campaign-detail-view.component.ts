@@ -19,15 +19,17 @@ export class CampaignDetailViewComponent implements OnInit{
    * The currently loaded campaign
    */
   campaign?:Campaign = undefined;
-
+  manager?:CampaignManagmentService = undefined;
   /**
    * 
    */
   constructor(
     private route: ActivatedRoute,
     private campaignEventService: CampaignEventService,
-    private campaignManagmentService: CampaignManagmentService,
-  ) {}
+    private campaignManager: CampaignManagmentService,
+  ) {
+    this.manager = campaignManager;
+  }
   /**
    * 
    */
@@ -36,16 +38,18 @@ export class CampaignDetailViewComponent implements OnInit{
     this.route.params.subscribe(params => {
       this.id = params['id'];
       //load the eventservice for the id that was extracted
-    this.campaign = this.campaignManagmentService.getCampaignById(this.id);
+    this.campaign = this.campaignManager.getCampaignById(this.id);
     if(this.campaign != undefined) {
       this.campaignEventService.loadCampaignById(this.id);
       this.campaignEventService.getEvents().subscribe( events => {
-        this.events = events.filter( event => event.eventCode == "KILL");
+        this.events = events;
       })
     }
     });
     
     
   }
+
+
 
 }

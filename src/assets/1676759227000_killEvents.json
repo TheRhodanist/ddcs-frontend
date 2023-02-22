@@ -1,0 +1,1528 @@
+[
+    {
+        "_id": "1677000242591_2007",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8920,
+            "side": 1,
+            "type": "Mi-24P",
+            "unitId": 14289
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1001982
+        },
+        "weapon": {
+            "weapon_name": "Ataka_9M120"
+        },
+        "score": 12,
+        "killer": "=Diablo=",
+        "killerType": "Mi-24P",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_Ataka_9M120",
+        "eventTime": "1677000242591",
+        "createdAt": "2023-02-21T17:24:02.595Z",
+        "updatedAt": "2023-02-21T17:24:02.595Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000255385_1298",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8920,
+            "side": 1,
+            "type": "Mi-24P",
+            "unitId": 14289
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1001981
+        },
+        "weapon": {
+            "weapon_name": "Ataka_9M120"
+        },
+        "score": 12,
+        "killer": "=Diablo=",
+        "killerType": "Mi-24P",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_Ataka_9M120",
+        "eventTime": "1677000255385",
+        "createdAt": "2023-02-21T17:24:15.388Z",
+        "updatedAt": "2023-02-21T17:24:15.388Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000283050_6283",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1001129,
+            "side": 1,
+            "type": "T-80UD",
+            "unitId": 1001130
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M1126 Stryker ICV",
+            "unitId": 1002257
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 40,
+        "killer": "=Dani84=",
+        "killerType": "T-80UD",
+        "killerControlledBy": "=Dani84=",
+        "victim": "Unknown",
+        "victimType": "M1126 Stryker ICV",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.shells.2A46M_125_AP",
+        "eventTime": "1677000283050",
+        "createdAt": "2023-02-21T17:24:43.051Z",
+        "updatedAt": "2023-02-21T17:24:43.051Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000299018_7647",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M1126 Stryker ICV",
+            "unitId": 1002643
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M127-1 Vikhr-M",
+            "impactPoint": {
+                "alt": 53.88060760498,
+                "lat": 43.48898500696,
+                "lon": 39.898843946226
+            },
+            "typeName": "weapons.missiles.Vikhr_M",
+            "weapon_name": "Vikhr_M"
+        },
+        "score": 50,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Balt",
+        "victimType": "M1126 Stryker ICV",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.Vikhr_M",
+        "eventTime": "1677000299018",
+        "createdAt": "2023-02-21T17:24:59.021Z",
+        "updatedAt": "2023-02-21T17:24:59.021Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000310289_9780",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002283,
+            "side": 2,
+            "type": "Stinger manpad",
+            "unitId": 1002284
+        },
+        "target": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "weapon": {
+            "weapon_name": "FIM_92C"
+        },
+        "score": 192,
+        "killer": "Unknown",
+        "killerType": "Stinger manpad",
+        "killerControlledBy": "AI",
+        "victim": "eeVaLDeeVaL",
+        "victimType": "Ka-50_3",
+        "victimControlledBy": "eeVaLDeeVaL",
+        "weapon_name": "_FIM_92C",
+        "eventTime": "1677000310289",
+        "createdAt": "2023-02-21T17:25:10.291Z",
+        "updatedAt": "2023-02-21T17:25:10.291Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000315647_6209",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1001253,
+            "side": 1,
+            "type": "HQ-7_LN_EO",
+            "unitId": 1001257
+        },
+        "target": {
+            "category": 1,
+            "side": 1,
+            "type": "Ural-375",
+            "unitId": 1001254
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "HQ-7",
+            "targetName": "Tuapse_MOB #6559585",
+            "typeName": "HQ-7",
+            "weapon_name": "HQ-7"
+        },
+        "score": 7,
+        "killer": "Lost CCP Weather Balloon",
+        "killerType": "HQ-7_LN_EO",
+        "killerControlledBy": "Lost CCP Weather Balloon",
+        "victim": "Unknown",
+        "victimType": "Ural-375",
+        "victimControlledBy": "AI",
+        "weapon_name": "HQ-7",
+        "eventTime": "1677000315647",
+        "createdAt": "2023-02-21T17:25:15.648Z",
+        "updatedAt": "2023-02-21T17:25:15.648Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000338772_1391",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8348,
+            "side": 1,
+            "type": "JF-17",
+            "unitId": 13709
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Hawk cwar",
+            "unitId": 1001385
+        },
+        "weapon": {
+            "weapon_name": "LD-10"
+        },
+        "score": 87,
+        "killer": "Wolfy",
+        "killerType": "JF-17",
+        "killerControlledBy": "Wolfy",
+        "victim": "Unknown",
+        "victimType": "Hawk cwar",
+        "victimControlledBy": "AI",
+        "weapon_name": "_LD-10",
+        "eventTime": "1677000338772",
+        "createdAt": "2023-02-21T17:25:38.774Z",
+        "updatedAt": "2023-02-21T17:25:38.774Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000385188_9198",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1001129,
+            "side": 1,
+            "type": "T-80UD",
+            "unitId": 1001130
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M1126 Stryker ICV",
+            "unitId": 1002270
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 40,
+        "killer": "=Dani84=",
+        "killerType": "T-80UD",
+        "killerControlledBy": "=Dani84=",
+        "victim": "Unknown",
+        "victimType": "M1126 Stryker ICV",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.shells.2A46M_125_AP",
+        "eventTime": "1677000385188",
+        "createdAt": "2023-02-21T17:26:25.189Z",
+        "updatedAt": "2023-02-21T17:26:25.189Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000503738_3884",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 4821,
+            "side": 2,
+            "type": "F-15C",
+            "unitId": 10143
+        },
+        "target": {
+            "category": 1,
+            "groupId": 5267,
+            "side": 1,
+            "type": "Su-27",
+            "unitId": 10589
+        },
+        "weapon": {
+            "weapon_name": "AIM_120C"
+        },
+        "score": 1339,
+        "killer": "Raptor7",
+        "killerType": "F-15C",
+        "killerControlledBy": "Raptor7",
+        "victim": "[Metal1-1]",
+        "victimType": "Su-27",
+        "victimControlledBy": "[Metal1-1]",
+        "weapon_name": "_AIM_120C",
+        "eventTime": "1677000503738",
+        "createdAt": "2023-02-21T17:28:23.740Z",
+        "updatedAt": "2023-02-21T17:28:23.740Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000530377_185",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1001129,
+            "side": 1,
+            "type": "T-80UD",
+            "unitId": 1001130
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Stinger manpad",
+            "unitId": 1002641
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 190,
+        "killer": "=Dani84=",
+        "killerType": "T-80UD",
+        "killerControlledBy": "=Dani84=",
+        "victim": "Balt",
+        "victimType": "Stinger manpad",
+        "victimControlledBy": "AI",
+        "weapon_name": "_12_7_MG",
+        "eventTime": "1677000530377",
+        "createdAt": "2023-02-21T17:28:50.378Z",
+        "updatedAt": "2023-02-21T17:28:50.378Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000532472_890",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002604,
+            "side": 1,
+            "type": "Strela-1 9P31",
+            "unitId": 1002606
+        },
+        "target": {
+            "category": 1,
+            "groupId": 5338,
+            "side": 2,
+            "type": "AV8BNA",
+            "unitId": 10660
+        },
+        "weapon": {
+            "weapon_name": "SA9M31"
+        },
+        "score": 785,
+        "killer": "Wolfy",
+        "killerType": "Strela-1 9P31",
+        "killerControlledBy": "AI",
+        "victim": "Riddick",
+        "victimType": "AV8BNA",
+        "victimControlledBy": "Riddick",
+        "weapon_name": "_SA9M31",
+        "eventTime": "1677000532472",
+        "createdAt": "2023-02-21T17:28:52.473Z",
+        "updatedAt": "2023-02-21T17:28:52.473Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000688046_6105",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8463,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13824
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Roland Radar",
+            "unitId": 1001999
+        },
+        "weapon": {
+            "weapon_name": "AGM_88"
+        },
+        "score": 81,
+        "killer": "Djim",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Djim",
+        "victim": "Unknown",
+        "victimType": "Roland Radar",
+        "victimControlledBy": "AI",
+        "weapon_name": "_AGM_88",
+        "eventTime": "1677000688046",
+        "createdAt": "2023-02-21T17:31:28.048Z",
+        "updatedAt": "2023-02-21T17:31:28.048Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000804310_661",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8083,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13444
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot str",
+            "unitId": 1001551
+        },
+        "weapon": {
+            "weapon_name": "AGM_88"
+        },
+        "score": 123,
+        "killer": "Lam",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Lam",
+        "victim": "Unknown",
+        "victimType": "Patriot str",
+        "victimControlledBy": "AI",
+        "weapon_name": "_AGM_88",
+        "eventTime": "1677000804310",
+        "createdAt": "2023-02-21T17:33:24.313Z",
+        "updatedAt": "2023-02-21T17:33:24.313Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000858540_6430",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002521,
+            "side": 1,
+            "type": "T-72B",
+            "unitId": 1002522
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Stinger manpad",
+            "unitId": 1002284
+        },
+        "weapon": {
+            "weapon_name": "Utes_12_7x108"
+        },
+        "score": 163,
+        "killer": "Unknown",
+        "killerType": "T-72B",
+        "killerControlledBy": "AI",
+        "victim": "Unknown",
+        "victimType": "Stinger manpad",
+        "victimControlledBy": "AI",
+        "weapon_name": "_Utes_12_7x108",
+        "eventTime": "1677000858540",
+        "createdAt": "2023-02-21T17:34:18.542Z",
+        "updatedAt": "2023-02-21T17:34:18.542Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000877407_475",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8083,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13444
+        },
+        "target": {
+            "category": 3,
+            "side": 2,
+            "type": "Shelter",
+            "unitId": 1002649
+        },
+        "weapon": {
+            "weapon_name": "GBU_31_V_3B"
+        },
+        "score": 500,
+        "killer": "Lam",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Lam",
+        "victim": "Unknown",
+        "victimType": "Shelter",
+        "victimControlledBy": "AI",
+        "weapon_name": "_GBU_31_V_3B",
+        "eventTime": "1677000877407",
+        "createdAt": "2023-02-21T17:34:37.410Z",
+        "updatedAt": "2023-02-21T17:34:37.410Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000889811_8087",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8102,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13463
+        },
+        "target": {
+            "category": 1,
+            "groupId": 5038,
+            "side": 1,
+            "type": "J-11A",
+            "unitId": 10360
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "AIM-120C",
+            "impactPoint": {
+                "alt": 1288.9676513672,
+                "lat": 43.794508614119,
+                "lon": 40.113172712651
+            },
+            "typeName": "weapons.missiles.AIM_120C",
+            "weapon_name": "AIM_120C"
+        },
+        "score": 1339,
+        "killer": "Dobber 1-1 18kokko18",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Dobber 1-1 18kokko18",
+        "victim": "Gvozd",
+        "victimType": "J-11A",
+        "victimControlledBy": "Gvozd",
+        "weapon_name": "weapons.missiles.AIM_120C",
+        "eventTime": "1677000889811",
+        "createdAt": "2023-02-21T17:34:49.813Z",
+        "updatedAt": "2023-02-21T17:34:49.813Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000969048_2327",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1001129,
+            "side": 1,
+            "type": "T-80UD",
+            "unitId": 1001130
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M 818",
+            "unitId": 1002092
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 7,
+        "killer": "=Dani84=",
+        "killerType": "T-80UD",
+        "killerControlledBy": "=Dani84=",
+        "victim": "Unknown",
+        "victimType": "M 818",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.shells.2A46M_125_AP",
+        "eventTime": "1677000969048",
+        "createdAt": "2023-02-21T17:36:09.049Z",
+        "updatedAt": "2023-02-21T17:36:09.049Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677000971187_2166",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002627,
+            "side": 1,
+            "type": "T-72B",
+            "unitId": 1002628
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002264
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 36,
+        "killer": "Rigez",
+        "killerType": "T-72B",
+        "killerControlledBy": "Rigez",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_7_62_PKT",
+        "eventTime": "1677000971187",
+        "createdAt": "2023-02-21T17:36:11.189Z",
+        "updatedAt": "2023-02-21T17:36:11.189Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001126847_6219",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8920,
+            "side": 1,
+            "type": "Mi-24P",
+            "unitId": 14289
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M1126 Stryker ICV",
+            "unitId": 1002276
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M120 Ataka (AT-9 Spiral-2)",
+            "impactPoint": {
+                "alt": 383.083984375,
+                "lat": 43.491503410912,
+                "lon": 40.004698063629
+            },
+            "typeName": "weapons.missiles.Ataka_9M120",
+            "weapon_name": "Ataka_9M120"
+        },
+        "score": 50,
+        "killer": "=Diablo=",
+        "killerType": "Mi-24P",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "M1126 Stryker ICV",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.Ataka_9M120",
+        "eventTime": "1677001126847",
+        "createdAt": "2023-02-21T17:38:46.848Z",
+        "updatedAt": "2023-02-21T17:38:46.848Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001231366_5918",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002240,
+            "side": 2,
+            "type": "M6 Linebacker",
+            "unitId": 1002243
+        },
+        "target": {
+            "category": 1,
+            "groupId": 8920,
+            "side": 1,
+            "type": "Mi-24P",
+            "unitId": 14289
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "FIM-92C Stinger",
+            "targetName": "EJ67-Pshekha_FOB #203",
+            "typeName": "weapons.missiles.FIM_92C",
+            "weapon_name": "FIM_92C"
+        },
+        "score": 69,
+        "killer": "Unknown",
+        "killerType": "M6 Linebacker",
+        "killerControlledBy": "AI",
+        "victim": "=Diablo=",
+        "victimType": "Mi-24P",
+        "victimControlledBy": "=Diablo=",
+        "weapon_name": "weapons.missiles.FIM_92C",
+        "eventTime": "1677001231366",
+        "createdAt": "2023-02-21T17:40:31.367Z",
+        "updatedAt": "2023-02-21T17:40:31.367Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001238291_2046",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002252,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002255
+        },
+        "target": {
+            "category": 1,
+            "side": 1,
+            "type": "ZTZ96B",
+            "unitId": 1002512
+        },
+        "weapon": {
+            "weapon_name": "2A28_73"
+        },
+        "score": 946,
+        "killer": "Unknown",
+        "killerType": "Paratrooper RPG-16",
+        "killerControlledBy": "AI",
+        "victim": "Rigez",
+        "victimType": "ZTZ96B",
+        "victimControlledBy": "Rigez",
+        "weapon_name": "_2A28_73",
+        "eventTime": "1677001238291",
+        "createdAt": "2023-02-21T17:40:38.293Z",
+        "updatedAt": "2023-02-21T17:40:38.293Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001301281_9108",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002234,
+            "side": 2,
+            "type": "M1045 HMMWV TOW",
+            "unitId": 1002235
+        },
+        "target": {
+            "category": 1,
+            "side": 1,
+            "type": "T-80UD",
+            "unitId": 1001130
+        },
+        "weapon": {
+            "weapon_name": "TOW2"
+        },
+        "score": 770,
+        "killer": "Unknown",
+        "killerType": "M1045 HMMWV TOW",
+        "killerControlledBy": "AI",
+        "victim": "=Dani84=",
+        "victimType": "T-80UD",
+        "victimControlledBy": "=Dani84=",
+        "weapon_name": "_TOW2",
+        "eventTime": "1677001301281",
+        "createdAt": "2023-02-21T17:41:41.282Z",
+        "updatedAt": "2023-02-21T17:41:41.282Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001305565_8997",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M 818",
+            "unitId": 1001536
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 1,
+        "killer": "",
+        "killerType": "",
+        "killerControlledBy": "Unknown",
+        "victim": "Unknown",
+        "victimType": "M 818",
+        "victimControlledBy": "AI",
+        "weapon_name": "",
+        "eventTime": "1677001305565",
+        "createdAt": "2023-02-21T17:41:45.568Z",
+        "updatedAt": "2023-02-21T17:41:45.568Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001309897_6097",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 7568,
+            "side": 2,
+            "type": "AH-64D_BLK_II",
+            "unitId": 12896
+        },
+        "target": {
+            "category": 1,
+            "side": 1,
+            "type": "Strela-1 9P31",
+            "unitId": 1002606
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "AGM-114K",
+            "impactPoint": {
+                "alt": 6.2548222541809,
+                "lat": 43.489000185831,
+                "lon": 39.88629683
+            },
+            "typeName": "weapons.missiles.AGM_114K",
+            "weapon_name": "AGM_114K"
+        },
+        "score": 97,
+        "killer": "MikeMan",
+        "killerType": "AH-64D_BLK_II",
+        "killerControlledBy": "MikeMan",
+        "victim": "Wolfy",
+        "victimType": "Strela-1 9P31",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.AGM_114K",
+        "eventTime": "1677001309897",
+        "createdAt": "2023-02-21T17:41:49.901Z",
+        "updatedAt": "2023-02-21T17:41:49.901Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001323893_6871",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Roland ADS",
+            "unitId": 1002221
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M127-1 Vikhr-M",
+            "typeName": "weapons.missiles.Vikhr_M",
+            "weapon_name": "Vikhr_M"
+        },
+        "score": 241,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Unknown",
+        "victimType": "Roland ADS",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.Vikhr_M",
+        "eventTime": "1677001323893",
+        "createdAt": "2023-02-21T17:42:03.895Z",
+        "updatedAt": "2023-02-21T17:42:03.895Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001350690_4645",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002602,
+            "side": 1,
+            "type": "ZSU-23-4 Shilka",
+            "unitId": 1002603
+        },
+        "target": {
+            "category": 1,
+            "groupId": 7568,
+            "side": 2,
+            "type": "AH-64D_BLK_II",
+            "unitId": 12896
+        },
+        "weapon": {
+            "category": 0,
+            "displayName": "23mm HE",
+            "typeName": "weapons.shells.2A7_23_HE",
+            "weapon_name": "2A7_23_HE"
+        },
+        "score": 799,
+        "killer": "Wolfy",
+        "killerType": "ZSU-23-4 Shilka",
+        "killerControlledBy": "AI",
+        "victim": "MikeMan",
+        "victimType": "AH-64D_BLK_II",
+        "victimControlledBy": "MikeMan",
+        "weapon_name": "_2A7_23_HE",
+        "eventTime": "1677001350690",
+        "createdAt": "2023-02-21T17:42:30.691Z",
+        "updatedAt": "2023-02-21T17:42:30.691Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001351630_1624",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Roland ADS",
+            "unitId": 1002222
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M127-1 Vikhr-M",
+            "typeName": "weapons.missiles.Vikhr_M",
+            "weapon_name": "Vikhr_M"
+        },
+        "score": 241,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Unknown",
+        "victimType": "Roland ADS",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.Vikhr_M",
+        "eventTime": "1677001351630",
+        "createdAt": "2023-02-21T17:42:31.631Z",
+        "updatedAt": "2023-02-21T17:42:31.631Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001357849_6009",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002252,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002254
+        },
+        "target": {
+            "category": 1,
+            "side": 1,
+            "type": "T-72B",
+            "unitId": 1002628
+        },
+        "weapon": {
+            "weapon_name": "2A28_73"
+        },
+        "score": 470,
+        "killer": "Unknown",
+        "killerType": "Paratrooper RPG-16",
+        "killerControlledBy": "AI",
+        "victim": "Rigez",
+        "victimType": "T-72B",
+        "victimControlledBy": "Rigez",
+        "weapon_name": "_2A28_73",
+        "eventTime": "1677001357849",
+        "createdAt": "2023-02-21T17:42:37.850Z",
+        "updatedAt": "2023-02-21T17:42:37.850Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001364706_3199",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8454,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13815
+        },
+        "target": {
+            "category": 3,
+            "side": 2,
+            "type": "Shelter",
+            "unitId": 1000016
+        },
+        "weapon": {
+            "category": 3,
+            "displayName": "GBU-31(V)3/B",
+            "impactPoint": {
+                "alt": 46.344524383545,
+                "lat": 43.452563311817,
+                "lon": 39.971187456532
+            },
+            "typeName": "weapons.bombs.GBU_31_V_3B",
+            "weapon_name": "GBU_31_V_3B"
+        },
+        "score": 500,
+        "killer": "Tupac Pereira",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Tupac Pereira",
+        "victim": "Unknown",
+        "victimType": "Shelter",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.bombs.GBU_31_V_3B",
+        "eventTime": "1677001364706",
+        "createdAt": "2023-02-21T17:42:44.709Z",
+        "updatedAt": "2023-02-21T17:42:44.709Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001381059_9103",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Hawk pcp",
+            "unitId": 1002227
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M127-1 Vikhr-M",
+            "typeName": "weapons.missiles.Vikhr_M",
+            "weapon_name": "Vikhr_M"
+        },
+        "score": 132,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Unknown",
+        "victimType": "Hawk pcp",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.Vikhr_M",
+        "eventTime": "1677001381059",
+        "createdAt": "2023-02-21T17:43:01.061Z",
+        "updatedAt": "2023-02-21T17:43:01.061Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001438054_4791",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002377,
+            "side": 1,
+            "type": "T-90",
+            "unitId": 1002378
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Stinger manpad",
+            "unitId": 1002796
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 204,
+        "killer": "=Diablo=",
+        "killerType": "T-90",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Balt",
+        "victimType": "Stinger manpad",
+        "victimControlledBy": "AI",
+        "weapon_name": "_7_62_MG",
+        "eventTime": "1677001438054",
+        "createdAt": "2023-02-21T17:43:58.055Z",
+        "updatedAt": "2023-02-21T17:43:58.055Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001438985_3234",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002377,
+            "side": 1,
+            "type": "T-90",
+            "unitId": 1002378
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "M1126 Stryker ICV",
+            "unitId": 1002798
+        },
+        "weapon": {
+            "category": 0,
+            "displayName": "3OF26 (125mm HE)",
+            "impactPoint": {
+                "alt": 82.981422424316,
+                "lat": 43.478957743389,
+                "lon": 39.905012156507
+            },
+            "typeName": "weapons.shells.2A46M_125_HE",
+            "weapon_name": "2A46M_125_HE"
+        },
+        "score": 40,
+        "killer": "=Diablo=",
+        "killerType": "T-90",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Balt",
+        "victimType": "M1126 Stryker ICV",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.shells.2A46M_125_HE",
+        "eventTime": "1677001438985",
+        "createdAt": "2023-02-21T17:43:58.988Z",
+        "updatedAt": "2023-02-21T17:43:58.988Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001471113_5802",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8100,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13461
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Roland Radar",
+            "unitId": 1002026
+        },
+        "weapon": {
+            "weapon_name": "AGM_88"
+        },
+        "score": 81,
+        "killer": "FISHEYE",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "FISHEYE",
+        "victim": "Unknown",
+        "victimType": "Roland Radar",
+        "victimControlledBy": "AI",
+        "weapon_name": "_AGM_88",
+        "eventTime": "1677001471113",
+        "createdAt": "2023-02-21T17:44:31.115Z",
+        "updatedAt": "2023-02-21T17:44:31.115Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001497222_6019",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "groupId": 7567,
+            "side": 2,
+            "type": "AH-64D_BLK_II",
+            "unitId": 12895
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "9M127-1 Vikhr-M",
+            "typeName": "weapons.missiles.Vikhr_M",
+            "weapon_name": "Vikhr_M"
+        },
+        "score": 320,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Riddick",
+        "victimType": "AH-64D_BLK_II",
+        "victimControlledBy": "Riddick",
+        "weapon_name": "weapons.missiles.Vikhr_M",
+        "eventTime": "1677001497222",
+        "createdAt": "2023-02-21T17:44:57.224Z",
+        "updatedAt": "2023-02-21T17:44:57.224Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001545319_8936",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002377,
+            "side": 1,
+            "type": "T-90",
+            "unitId": 1002378
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002254
+        },
+        "weapon": {
+            "weapon_name": "2A46M_125_HE"
+        },
+        "score": 12,
+        "killer": "=Diablo=",
+        "killerType": "T-90",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_2A46M_125_HE",
+        "eventTime": "1677001545319",
+        "createdAt": "2023-02-21T17:45:45.322Z",
+        "updatedAt": "2023-02-21T17:45:45.322Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001545382_3497",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002377,
+            "side": 1,
+            "type": "T-90",
+            "unitId": 1002378
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002253
+        },
+        "weapon": {
+            "weapon_name": "2A46M_125_HE"
+        },
+        "score": 12,
+        "killer": "=Diablo=",
+        "killerType": "T-90",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_2A46M_125_HE",
+        "eventTime": "1677001545382",
+        "createdAt": "2023-02-21T17:45:45.384Z",
+        "updatedAt": "2023-02-21T17:45:45.384Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001557731_9346",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002377,
+            "side": 1,
+            "type": "T-90",
+            "unitId": 1002378
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Paratrooper RPG-16",
+            "unitId": 1002255
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 36,
+        "killer": "=Diablo=",
+        "killerType": "T-90",
+        "killerControlledBy": "=Diablo=",
+        "victim": "Unknown",
+        "victimType": "Paratrooper RPG-16",
+        "victimControlledBy": "AI",
+        "weapon_name": "_7_62_MG",
+        "eventTime": "1677001557731",
+        "createdAt": "2023-02-21T17:45:57.733Z",
+        "updatedAt": "2023-02-21T17:45:57.733Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001566905_8191",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 1002771,
+            "side": 2,
+            "type": "NASAMS_LN_C",
+            "unitId": 1002774
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "NASAMS_LN_C",
+            "unitId": 1002773
+        },
+        "weapon": {
+            "category": 1,
+            "displayName": "AIM-120C",
+            "typeName": "weapons.missiles.AIM_120C",
+            "weapon_name": "AIM_120C"
+        },
+        "score": 394,
+        "killer": "Balt",
+        "killerType": "NASAMS_LN_C",
+        "killerControlledBy": "AI",
+        "victim": "Balt",
+        "victimType": "NASAMS_LN_C",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.missiles.AIM_120C",
+        "eventTime": "1677001566905",
+        "createdAt": "2023-02-21T17:46:06.907Z",
+        "updatedAt": "2023-02-21T17:46:06.907Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001590396_4225",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 6653,
+            "side": 1,
+            "type": "Ka-50_3",
+            "unitId": 11975
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "ZU-23 Emplacement",
+            "unitId": 1002009
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 8,
+        "killer": "eeVaLDeeVaL",
+        "killerType": "Ka-50_3",
+        "killerControlledBy": "eeVaLDeeVaL",
+        "victim": "Unknown",
+        "victimType": "ZU-23 Emplacement",
+        "victimControlledBy": "AI",
+        "weapon_name": "_2A42",
+        "eventTime": "1677001590396",
+        "createdAt": "2023-02-21T17:46:30.400Z",
+        "updatedAt": "2023-02-21T17:46:30.400Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001596813_467",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8101,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13462
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot cp",
+            "unitId": 1002294
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 97,
+        "killer": "Magnum 1-2 Fantastic",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Magnum 1-2 Fantastic",
+        "victim": "Unknown",
+        "victimType": "Patriot cp",
+        "victimControlledBy": "AI",
+        "weapon_name": "weapons.bombs.CBU_105",
+        "eventTime": "1677001596813",
+        "createdAt": "2023-02-21T17:46:36.815Z",
+        "updatedAt": "2023-02-21T17:46:36.815Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001600302_9077",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8101,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13462
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot ln",
+            "unitId": 1002295
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 62,
+        "killer": "Magnum 1-2 Fantastic",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Magnum 1-2 Fantastic",
+        "victim": "Unknown",
+        "victimType": "Patriot ln",
+        "victimControlledBy": "AI",
+        "weapon_name": "_",
+        "eventTime": "1677001600302",
+        "createdAt": "2023-02-21T17:46:40.304Z",
+        "updatedAt": "2023-02-21T17:46:40.304Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001605457_8031",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8101,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13462
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot EPP",
+            "unitId": 1002292
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 25,
+        "killer": "Magnum 1-2 Fantastic",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Magnum 1-2 Fantastic",
+        "victim": "Unknown",
+        "victimType": "Patriot EPP",
+        "victimControlledBy": "AI",
+        "weapon_name": "_",
+        "eventTime": "1677001605457",
+        "createdAt": "2023-02-21T17:46:45.462Z",
+        "updatedAt": "2023-02-21T17:46:45.462Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001607324_1250",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8101,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13462
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot ln",
+            "unitId": 1002298
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 62,
+        "killer": "Magnum 1-2 Fantastic",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Magnum 1-2 Fantastic",
+        "victim": "Unknown",
+        "victimType": "Patriot ln",
+        "victimControlledBy": "AI",
+        "weapon_name": "_",
+        "eventTime": "1677001607324",
+        "createdAt": "2023-02-21T17:46:47.325Z",
+        "updatedAt": "2023-02-21T17:46:47.325Z",
+        "__v": 0
+    },
+    {
+        "_id": "1677001607978_3104",
+        "campaign": "DrexMainServer_DDCS-Modern-CA_1676759227000",
+        "sessionName": "DrexMainServer_DDCS-Modern-CA_1676995136000",
+        "initiator": {
+            "category": 1,
+            "groupId": 8101,
+            "side": 1,
+            "type": "F-16C_50",
+            "unitId": 13462
+        },
+        "target": {
+            "category": 1,
+            "side": 2,
+            "type": "Patriot ECS",
+            "unitId": 1002293
+        },
+        "weapon": {
+            "weapon_name": ""
+        },
+        "score": 20,
+        "killer": "Magnum 1-2 Fantastic",
+        "killerType": "F-16C_50",
+        "killerControlledBy": "Magnum 1-2 Fantastic",
+        "victim": "Unknown",
+        "victimType": "Patriot ECS",
+        "victimControlledBy": "AI",
+        "weapon_name": "_",
+        "eventTime": "1677001607978",
+        "createdAt": "2023-02-21T17:46:47.979Z",
+        "updatedAt": "2023-02-21T17:46:47.979Z",
+        "__v": 0
+    }
+]

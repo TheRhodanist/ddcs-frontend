@@ -1,27 +1,20 @@
 @use 'sass:map';
 @use '../_variables.scss' as theme;
 
-.main-container {
+.main-sidebar-container {
     width: 100vw;
     height: 100vh;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    display:grid;
-    grid-template-columns: 128px 100%;
-    background: #303030;
   }
   
-  .main-content {
+  .main-sidebar-content {
     display: grid;
     height: 100%;
-    width:100%
-    
+    grid-template-columns: 128px 1fr;
   }
+  
   .main-sidebar {
-    display:grid;
-    grid-template-rows: 128px 100%;
-  }
-  .main-sidebar-content {
-    grid-row: 2;
+    padding: 20px;
   }
   #main-icon-wrapper {
     position: fixed;

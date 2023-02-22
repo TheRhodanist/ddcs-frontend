@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { filter, map, Observable, of, tap } from 'rxjs';
 import { CampaignEvent,EventWeapon } from 'src/app/shared/Interfaces';
 import { CampaignManagmentService } from '../shared/campaign-managment.service';
 import { categoryFilter } from '../shared/shared.module';
@@ -10,7 +10,7 @@ import { categoryFilter } from '../shared/shared.module';
 @Injectable()
 export class CampaignEventService {
   private id:number = -1;
-
+  private modifiedDate:string = "0";
   events:CampaignEvent[] = [];
   killEvents:CampaignEvent[] = [];
 
@@ -25,25 +25,27 @@ export class CampaignEventService {
    */
   loadCampaignById(id: number) {
     this.id = id;
-    this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").subscribe(
+    this.getEvents().subscribe(
       events => {
         this.events = events;
-        this.buildArrays();
       }
     );
   }
 
   getEvents():Observable<CampaignEvent[]> {
-    return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json");
+    if(this.events.length!=0) return of(this.events);
+    return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").pipe(
+      tap( events => this.modifiedDate = events[events.length-1].eventTime)
+    );
   }
 
-  buildArrays():void {
-    this.killEvents = this.events
+  getDate():string {
+    return this.modifiedDate;
   }
 
-  getKillEvents():CampaignEvent[] {
-    return this.killEvents;
-  }
+
+
+
 
   
 

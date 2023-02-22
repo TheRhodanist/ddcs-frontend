@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FilteredListComponent } from './filtered-list/filtered-list.component';
 import { EventListComponent } from './event-list/event-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -38,6 +39,7 @@ import { EventListComponent } from './event-list/event-list.component';
     MatPaginatorModule,
     MatCardModule,
     MatTabsModule,
+    FormsModule,
   ],
   exports: [
     CommonModule,
@@ -56,6 +58,7 @@ import { EventListComponent } from './event-list/event-list.component';
     MatTabsModule,
     FilteredListComponent,
     EventListComponent,
+    FormsModule,
   ]
 })
 export class SharedUIModule { }
@@ -67,4 +70,5 @@ export interface columnFormat {
   columnDef: string;//'definition',
   header: string//'displayed header',
   cell: Function //(element: ElementType) => '${element.definition}',
+  value?: string
 }

@@ -45,4 +45,9 @@
 .cardWithIcon:hover {
   background: darken( theme.$my-app-background, 2% );
 }
+.title-header {
+  display: grid;
+  gap:10px;
+  grid-template-columns: 1fr 3fr;
+}
 

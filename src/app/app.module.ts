@@ -13,6 +13,7 @@ import { SharedUIModule } from './shared/shared.module';
 import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/campaign-detail-view/campaign-detail-view.component';
 import { MatTableModule } from '@angular/material/table';
 import { CampaignChooserComponent } from './campaign-view/campaign-chooser/campaign-chooser.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,6 @@ import { CampaignChooserComponent } from './campaign-view/campaign-chooser/campa
     DashboardComponent,
     CampaignChooserComponent,
     CampaignDetailViewComponent,
-
-    
   ],
   imports: [
     BrowserModule,

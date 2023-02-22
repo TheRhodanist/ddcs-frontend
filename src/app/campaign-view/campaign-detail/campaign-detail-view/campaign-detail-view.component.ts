@@ -11,6 +11,8 @@ import { CampaignEventService } from '../../campaign-events.service';
 })
 export class CampaignDetailViewComponent implements OnInit{
   id: number=-1; //Id of the loaded campaign,(-1) for undefined
+
+  modifiedDate:string = "0";
   /**
    * List of events belonging to the currently loaded campaign
    */
@@ -42,12 +44,18 @@ export class CampaignDetailViewComponent implements OnInit{
     if(this.campaign != undefined) {
       this.campaignEventService.loadCampaignById(this.id);
       this.campaignEventService.getEvents().subscribe( events => {
-        this.events = events;
+        this.modifiedDate = this.campaignEventService.getDate();
+        this.events = events.reverse();
       })
     }
     });
     
     
+  }
+
+  getDatefromEpoch(epoch:string):string {
+    let date = new Date(Number(epoch));
+    return date.toLocaleString('en-GB', { timeZone: 'UTC' });
   }
 
 

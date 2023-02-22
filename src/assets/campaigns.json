@@ -1,10 +1,1 @@
-[
-    {
-        "_id": "DrexMainServer_DDCS-Modern-CA_1676759227000",
-        "totalMinutesPlayed_blue": 91370,
-        "totalMinutesPlayed_red": 111595,
-        "createdAt": "2023-02-18T22:27:11.842Z",
-        "updatedAt": "2023-02-21T17:29:01.369Z",
-        "__v": 0
-    }
-]
+[{"_id":"DrexMainServer_DDCS-Modern-CA_1676759227000","totalMinutesPlayed_blue":111670,"totalMinutesPlayed_red":142685,"createdAt":"2023-02-18T22:27:11.842Z","updatedAt":"2023-02-22T10:12:51.749Z","__v":0}]

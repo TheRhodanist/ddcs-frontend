@@ -1,9 +1,10 @@
 <!-- TODO make it actually change styles to indicate the hover/interactive state -->
-<mat-card style="max-width: 200px;" [routerLink]="['/campaigns']" >
-    <mat-card-content class="cardWithIcon">
-        <mat-icon>expand_less</mat-icon>campaigns
+<mat-card   >
+    <mat-card-content class="cardWithIcon title-header">
+        <button mat-button color="primary" class="title-button" [routerLink]="['/campaigns']"><mat-icon>expand_less</mat-icon>campaigns</button>
+        <h1 class="title-text">Kills for the campaign: {{id}} on {{manager!.getMap(campaign!._id)}} as of {{getDatefromEpoch(modifiedDate)}}</h1>
     </mat-card-content>    
 </mat-card>
 
-<h1>Kills for the campaign: {{id}} on {{manager!.getMap(campaign!._id)}}</h1>
+
 <app-event-list [data]="events" ></app-event-list>

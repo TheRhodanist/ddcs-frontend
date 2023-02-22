@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Simple
 import { concatMap, Observable } from 'rxjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatChipListboxChange } from '@angular/material/chips';
+import { MatInputModule} from '@angular/material/input';
 import { categoryFilter, columnFormat } from '../shared.module';
 import { CampaignEvent } from '../Interfaces';
 import { CampaignManagmentService } from '../campaign-managment.service';
@@ -35,12 +35,21 @@ export class EventListComponent<T> implements OnInit{
   ];
   displayedColumns = this.columns.map(c => c.columnDef);
 
+  weaponFilter = "";
+  killerFilter = "";
+  killerTypeFilter = "";
+  killerControlFilter = "";
+  victimFilter = "";
+  victimTypeFilter = "";
+  victimControlFilter = "";
+
+
   @Input() data: any[] = [];
   
-  @Input() filters: categoryFilter<T>[] = [];
+  @Input() filt: Object = {};
   activeFilters: categoryFilter<T>[] = [];
   filteredData: any[] = [];
-  dataSource = new MatTableDataSource(this.data);
+  dataSource = new MatTableDataSource<CampaignEvent>(this.data);
     @ViewChild(MatPaginator) paginator!: MatPaginator;
     /**
      * 
@@ -49,6 +58,7 @@ export class EventListComponent<T> implements OnInit{
       private campaignManager:CampaignManagmentService,
     ) { }
     ngOnInit(): void {
+    
       this.update();
     }
     ngAfterViewInit() {
@@ -65,6 +75,13 @@ export class EventListComponent<T> implements OnInit{
      */
     update():void {
       this.dataSource.data = this.data;
+      if(this.weaponFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.weapon?.weapon_name.toLowerCase().includes(this.weaponFilter.toLowerCase()))}
+      if(this.killerFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killer?.toLowerCase().includes(this.killerFilter.toLowerCase()))}
+      if(this.killerTypeFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killerType?.toLowerCase().includes(this.killerTypeFilter.toLowerCase()))}
+      if(this.killerControlFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killerControlledBy?.toLowerCase().includes(this.killerControlFilter.toLowerCase()))}
+      if(this.victimFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victim?.toLowerCase().includes(this.victimFilter.toLowerCase()))}
+      if(this.victimTypeFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victimType?.toLowerCase().includes(this.victimTypeFilter.toLowerCase()))}
+      if(this.victimControlFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victimControlledBy?.toLowerCase().includes(this.victimControlFilter.toLowerCase()))}
       for (const filter of this.activeFilters) {
         //console.log(filter);
         
@@ -81,6 +98,17 @@ export class EventListComponent<T> implements OnInit{
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.update();
+  }
+  clearFilters():void {
+    this.weaponFilter = "";
+    this.killerFilter = "";
+    this.killerTypeFilter = "";
+    this.killerControlFilter = "";
+    this.victimFilter = "";
+    this.victimTypeFilter = "";
+    this.victimControlFilter = "";
+    this.dataSource.filter = "";
   }
 
   getDatefromEpoch(epoch:string):string {
@@ -88,4 +116,17 @@ export class EventListComponent<T> implements OnInit{
     return date.toLocaleString('en-GB', { timeZone: 'UTC' });
   }
 
+  resolveEnum(name:string):string {
+    return "";
+  }
+
+}
+enum Filters {
+  weapon,
+  killer,
+  killerType,
+  killerControl,
+  victim,
+  victimType,
+  victimControl
 }

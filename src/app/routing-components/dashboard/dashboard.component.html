@@ -6,22 +6,21 @@
 </mat-card-content>
 
 <mat-card >
-    <mat-card-header [routerLink]="['/campaign',manager!.getId(currentCampaign?._id!.toString())]"><h3>Current Campaign</h3> <mat-icon>arrow_right</mat-icon></mat-card-header>
+    <mat-card-header ><button mat-button color="primary" class="title-button" [routerLink]="['/campaign',manager!.getId(currentCampaign?._id!.toString())]"><mat-icon>arrow_right</mat-icon>Current Campaign</button></mat-card-header>
     <mat-card-content>
-        <table style="border-spacing: 10px">
-            <tr>
-                <th>ID</th>
-                <th>Map</th>
-                <th>Minutes Red</th>
-                <th>Minutes Blue</th>
-            </tr>
-            <tr>
-                <td>{{manager?.getId(currentCampaign?._id!.toString())}}</td>
-                <td>{{manager?.getMap(currentCampaign?._id!.toString())}}</td>
-                <td>{{currentCampaign?.totalMinutesPlayed_red}}</td>
-                <td>{{currentCampaign?.totalMinutesPlayed_blue}}</td>
-            </tr>
-        </table>
+        <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+                <div>ID</div>
+                <div>Map</div>
+                <div>Minutes Red</div>
+                <div>Minutes Blue</div>
+        </div>
+        <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr;padding-top:20px">
+                <div>{{manager?.getId(currentCampaign?._id!.toString())}}</div>
+                <div>{{manager?.getMap(currentCampaign?._id!.toString())}}</div>
+                <div>{{currentCampaign?.totalMinutesPlayed_red}}</div>
+                <div>{{currentCampaign?.totalMinutesPlayed_blue}}</div>
+        </div>
+
 
     </mat-card-content>
     <mat-card-actions></mat-card-actions>

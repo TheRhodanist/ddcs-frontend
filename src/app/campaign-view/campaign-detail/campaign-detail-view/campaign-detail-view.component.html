@@ -2,7 +2,7 @@
 <mat-card   >
     <mat-card-content class="cardWithIcon title-header">
         <button mat-button color="primary" class="title-button" [routerLink]="['/campaigns']"><mat-icon>expand_less</mat-icon>campaigns</button>
-        <h1 class="title-text">Kills for the campaign: {{id}} on {{manager!.getMap(campaign!._id)}} as of {{getDatefromEpoch(modifiedDate)}}</h1>
+        <h1 class="title-text">Kills for the campaign: {{id}} on {{mapName}} as of {{getDatefromEpoch(modifiedDate)}}</h1>
     </mat-card-content>    
 </mat-card>
 

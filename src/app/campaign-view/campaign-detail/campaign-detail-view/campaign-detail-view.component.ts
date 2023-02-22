@@ -13,6 +13,7 @@ export class CampaignDetailViewComponent implements OnInit{
   id: number=-1; //Id of the loaded campaign,(-1) for undefined
 
   modifiedDate:string = "0";
+  mapName:string ="_";
   /**
    * List of events belonging to the currently loaded campaign
    */
@@ -45,6 +46,7 @@ export class CampaignDetailViewComponent implements OnInit{
       this.campaignEventService.loadCampaignById(this.id);
       this.campaignEventService.getEvents().subscribe( events => {
         this.modifiedDate = this.campaignEventService.getDate();
+        this.mapName = this.manager!.getMap(this.campaign!._id)
         this.events = events.reverse();
       })
     }

@@ -46,12 +46,12 @@ export interface CampaignEvent {
     __v?:                 number;
     score?:              number;
     target?:             Initiator;
-    killer?:             string;
-    killerType?:         string;
-    killerControlledBy?: string;
-    victim?:             string;
-    victimType?:         string;
-    victimControlledBy?: string;
+    killer:             string;
+    killerType:         string;
+    killerControlledBy: string;
+    victim:             string;
+    victimType:         string;
+    victimControlledBy: string;
     weapon_name?:        string;
     iucid?:              string;
     iName?:              string;

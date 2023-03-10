@@ -20,16 +20,19 @@ export class EventListComponent<T> implements OnInit{
 
   @Input() columns: columnFormat[] = [
     {columnDef:'weapon',header:'Weapon',cell: (element: CampaignEvent) => {
-    if(element.weapon?.displayName !=undefined) return element.weapon.displayName;
-    return element.weapon_name; //check if the "nice" weapon name is available, if not use default
+      if(element.weapon?.displayName !=undefined) return element.weapon.displayName;
+      return element.weapon_name; //check if the "nice" weapon name is available, if not use default
     }},
     {columnDef:'score',header:'Score',cell: (element: CampaignEvent) => element.score},
-    {columnDef:'killer',header:'Killer',cell: (element: CampaignEvent) => element.killer},
+    {columnDef:'killer',header:'Killer(Controller)',cell: (element: CampaignEvent) => 
+    this.buildStringForNameDiplay(element.killer,element.killerControlledBy)},
     {columnDef:'killerType',header:'Type',cell: (element: CampaignEvent) => element.killerType},
-    {columnDef:'killerControl',header:'Controlled',cell: (element: CampaignEvent) => element.killerControlledBy},
-    {columnDef:'victim',header:'Victim',cell: (element: CampaignEvent) => element.victim},
-    {columnDef:'victimType',header:'Type',cell: (element: CampaignEvent) => element.victimType},
-    {columnDef:'victimControl',header:'Controlled',cell: (element: CampaignEvent) => element.victimControlledBy},
+    {columnDef:'victim',header:'Victim(Controller)',cell: (element: CampaignEvent) => 
+    this.buildStringForNameDiplay(element.victim,element.victimControlledBy)},
+    {columnDef:'victimType',header:'Type',cell: (element: CampaignEvent) => {
+      if(element.victimType=="") return element.target?.type;
+      return element.victimType;
+    }},
     {columnDef:'eventTime',header:'Time UTC',cell: (element: CampaignEvent) => this.getDatefromEpoch(element.eventTime)},
 
   ];
@@ -78,10 +81,8 @@ export class EventListComponent<T> implements OnInit{
       if(this.weaponFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.weapon?.weapon_name.toLowerCase().includes(this.weaponFilter.toLowerCase()))}
       if(this.killerFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killer?.toLowerCase().includes(this.killerFilter.toLowerCase()))}
       if(this.killerTypeFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killerType?.toLowerCase().includes(this.killerTypeFilter.toLowerCase()))}
-      if(this.killerControlFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.killerControlledBy?.toLowerCase().includes(this.killerControlFilter.toLowerCase()))}
       if(this.victimFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victim?.toLowerCase().includes(this.victimFilter.toLowerCase()))}
       if(this.victimTypeFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victimType?.toLowerCase().includes(this.victimTypeFilter.toLowerCase()))}
-      if(this.victimControlFilter!="") {this.dataSource.data=this.dataSource.data.filter(el => el.victimControlledBy?.toLowerCase().includes(this.victimControlFilter.toLowerCase()))}
       for (const filter of this.activeFilters) {
         //console.log(filter);
         
@@ -104,11 +105,15 @@ export class EventListComponent<T> implements OnInit{
     this.weaponFilter = "";
     this.killerFilter = "";
     this.killerTypeFilter = "";
-    this.killerControlFilter = "";
     this.victimFilter = "";
     this.victimTypeFilter = "";
-    this.victimControlFilter = "";
     this.dataSource.filter = "";
+  }
+
+  buildStringForNameDiplay(owner:string,controller:String):string {
+    let result = owner;
+    if(controller!==owner) result+="("+controller+")";
+    return result;
   }
 
   getDatefromEpoch(epoch:string):string {

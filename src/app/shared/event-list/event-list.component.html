@@ -3,7 +3,7 @@
     <input matInput (keyup)="applyFilter($event)" placeholder="Insert freeflow filter" #input> 
   </mat-form-field>      !Search is still buggy in regards to special characters!
   <div >
-    <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr">
+    <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr">
       <mat-form-field>
         <input matInput placeholder="Weapon" [(ngModel)]="weaponFilter" (input)="update()">
       </mat-form-field>
@@ -15,16 +15,10 @@
         <input matInput placeholder="Type" [(ngModel)]="killerTypeFilter" (input)="update()">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Control" [(ngModel)]="killerControlFilter" (input)="update()">
-      </mat-form-field>
-      <mat-form-field>
         <input matInput placeholder="Victim" [(ngModel)]="victimFilter" (input)="update()">
       </mat-form-field>
       <mat-form-field>
         <input matInput placeholder="Type" [(ngModel)]="victimTypeFilter" (input)="update()">
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Control" [(ngModel)]="victimControlFilter" (input)="update()">
       </mat-form-field>
       <div></div>
     </div>

@@ -34,9 +34,14 @@ export class CampaignEventService {
 
   getEvents():Observable<CampaignEvent[]> {
     if(this.events.length!=0) return of(this.events);
-    return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").pipe(
+    //FIXME undo temp fix for broken ddcs-export
+    // return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").pipe(
+    //   tap( events => this.modifiedDate = events[events.length-1].eventTime)
+    // );
+    return this.http.get<CampaignEvent[]>("/assets/1676759227000_killEvents.json").pipe(
       tap( events => this.modifiedDate = events[events.length-1].eventTime)
     );
+    
   }
 
   getDate():string {

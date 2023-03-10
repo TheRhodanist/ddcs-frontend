@@ -46,8 +46,10 @@ export class CampaignDetailViewComponent implements OnInit{
       this.campaignEventService.loadCampaignById(this.id);
       this.campaignEventService.getEvents().subscribe( events => {
         this.modifiedDate = this.campaignEventService.getDate();
-        this.mapName = this.manager!.getMap(this.campaign!._id)
+        this.mapName = this.manager!.getMap(this.campaign!._id);
         this.events = events.reverse();
+        this.events = this.events.filter(event => event.campaign!.includes(this.id.toString()));
+
       })
     }
     });

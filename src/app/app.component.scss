@@ -1,50 +1,50 @@
 @use 'sass:map';
 @use '../_variables.scss' as theme;
 
-.main-container {
+#main-container {
     width: 100vw;
     height: 100vh;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     display:grid;
-    grid-template-columns: 128px 100%;
-    background: #303030;
+    grid-template-columns: 138px auto;
+
   }
-  
-  .main-content {
-    display: grid;
-    height: 100%;
-    width:100%
-    
+  //Sidebar
+  #main-sidebar-wrapper {
+    width:100%;
+    padding:10px;
   }
-  .main-sidebar {
+  #main-sidebar {
+    position:fixed;
     display:grid;
-    grid-template-rows: 128px 100%;
-  }
-  .main-sidebar-content {
-    grid-row: 2;
+    grid-template-rows: 158px 100%;
   }
   #main-icon-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
+    grid-row: 1;
     width: 128px;
-    height: 128px;
-    padding: 10px;
-}
-
-#main-icon {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    width: 118px;
-    height: 118px;
+    height: 148px;
     border-radius: 10px;
     background: darken( theme.$my-app-background, 5% );
-}
-#main-icon:hover {
-  background: map-get(theme.$my-app-primary, 500);
-}
-.cardWithIcon {
+  }
+  #main-icon {
+    width: 118px;
+    height: 118px;
+    
+  }
+  #main-icon-wrapper:hover {
+    background: map-get(theme.$my-app-primary, 500);
+  }
+  #main-sidebar-content {
+    grid-row: 2;
+  }
+  //Content
+  #main-content {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 0px 100%;
+    padding:10px;
+  }
+  
+  .cardWithIcon {
   display: flex;
   align-items: center;
   

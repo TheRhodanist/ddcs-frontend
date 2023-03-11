@@ -11,7 +11,6 @@ import { UnitListService } from './unit-list.service';
 import { WeaponListService } from './weapon-list/weapon-list.service';
 //Angular Material
 
-
 @NgModule({
   declarations: [
     DataViewComponent,
@@ -20,15 +19,7 @@ import { WeaponListService } from './weapon-list/weapon-list.service';
     PlaneListComponent,
     WeaponListComponent,
   ],
-  imports: [
-    DataViewRoutingModule,
-    SharedUIModule,
-  ],
-  providers: [ 
-    UnitListService ,
-    WeaponListService,
-  ]
+  imports: [DataViewRoutingModule, SharedUIModule],
+  providers: [UnitListService, WeaponListService],
 })
-export class DataViewModule { 
-
-}
+export class DataViewModule {}

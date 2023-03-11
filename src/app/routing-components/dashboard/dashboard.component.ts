@@ -4,19 +4,21 @@ import { Campaign } from 'src/app/shared/Interfaces';
 
 @Component({
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
 })
-export class DashboardComponent implements OnInit{
-  currentCampaign?:Campaign = undefined;
-  manager?:CampaignManagmentService = undefined;
+export class DashboardComponent implements OnInit {
+  currentCampaign?: Campaign = undefined;
+  manager?: CampaignManagmentService = undefined;
 
-  constructor(
-    private campaignManager:CampaignManagmentService,
-  ) {this.manager = campaignManager}
+  constructor(private campaignManager: CampaignManagmentService) {
+    this.manager = campaignManager;
+  }
 
-    ngOnInit(): void {
-        this.campaignManager.getCampaigns().subscribe(
-          campaigns => this.currentCampaign = campaigns[campaigns.length-1]
-        );
-    }
+  ngOnInit(): void {
+    this.campaignManager
+      .getCampaigns()
+      .subscribe(
+        (campaigns) => (this.currentCampaign = campaigns[campaigns.length - 1])
+      );
+  }
 }

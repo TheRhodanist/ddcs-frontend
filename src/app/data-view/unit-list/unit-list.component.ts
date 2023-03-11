@@ -9,22 +9,22 @@ import { UnitListService } from '../unit-list.service';
   styleUrls: ['./unit-list.component.scss'],
 })
 export class UnitListComponent implements OnInit {
-  
-  units:Unit[]=[];
+  units: Unit[] = [];
   filters: categoryFilter<Unit>[] = [];
   columns: columnFormat[] = [
-    {columnDef:'_id',header:'ID',cell: (element: any) => element._id},
-    {columnDef:'warbondCost',header:'Cost',cell: (element: any) => element.warbondCost},
+    { columnDef: '_id', header: 'ID', cell: (element: any) => element._id },
+    {
+      columnDef: 'warbondCost',
+      header: 'Cost',
+      cell: (element: any) => element.warbondCost,
+    },
   ];
 
-  constructor (
-    private unitListService:UnitListService,
-  ) {}
+  constructor(private unitListService: UnitListService) {}
   ngOnInit(): void {
-    this.unitListService.getUnits()
-    .subscribe(units => {
-      this.units = units.filter( unit => ![0,1].includes(unit.unitCategory));
-    })
+    this.unitListService.getUnits().subscribe((units) => {
+      this.units = units.filter((unit) => ![0, 1].includes(unit.unitCategory));
+    });
     this.filters = this.unitListService.getGroundFilters();
   }
 }

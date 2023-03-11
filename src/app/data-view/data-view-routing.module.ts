@@ -7,17 +7,21 @@ import { UnitListComponent } from './unit-list/unit-list.component';
 import { WeaponListComponent } from './weapon-list/weapon-list.component';
 
 const routes: Routes = [
-  { path: '',component: DataViewComponent,children: [
-    { path: '',redirectTo: 'overview', pathMatch: 'full'},
-    { path: 'overview', component: OverviewComponent},
-    { path: 'planes',component: PlaneListComponent},
-    { path: 'weapons',component: WeaponListComponent},
-    { path: 'units',component: UnitListComponent},
-]},
+  {
+    path: '',
+    component: DataViewComponent,
+    children: [
+      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      { path: 'overview', component: OverviewComponent },
+      { path: 'planes', component: PlaneListComponent },
+      { path: 'weapons', component: WeaponListComponent },
+      { path: 'units', component: UnitListComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class DataViewRoutingModule { }
+export class DataViewRoutingModule {}

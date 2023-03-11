@@ -1,62 +1,67 @@
-@use 'sass:map';
-@use '../_variables.scss' as theme;
+@use "sass:map";
+@use "../_variables.scss" as theme;
 
 #main-container {
-    width: 100vw;
-    height: 100vh;
-    display:grid;
-    grid-template-columns: 138px auto;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 138px auto;
+}
 
-  }
-  //Sidebar
-  #main-sidebar-wrapper {
-    width:100%;
-    padding:10px;
-  }
-  #main-sidebar {
-    position:fixed;
-    display:grid;
-    grid-template-rows: 158px 100%;
-  }
-  #main-icon-wrapper {
-    grid-row: 1;
-    width: 128px;
-    height: 148px;
-    border-radius: 10px;
-    background: darken( theme.$my-app-background, 5% );
-  }
-  #main-icon {
-    padding-left: 5px;
-    width: 118px;
-    height: 118px;
-    
-  }
-  #main-icon-wrapper:hover {
-    background: map-get(theme.$my-app-primary, 900);
-    cursor: pointer;
-  }
-  #main-sidebar-content {
-    grid-row: 2;
-  }
-  //Content
-  #main-content {
-    grid-column: 2;
-    display: grid;
-    grid-template-rows: 0px 100%;
-    padding:10px;
-  }
-  
-  .cardWithIcon {
+//Sidebar
+#main-sidebar-wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+#main-sidebar {
+  position: fixed;
+  display: grid;
+  grid-template-rows: 158px 100%;
+}
+
+#main-icon-wrapper {
+  grid-row: 1;
+  width: 128px;
+  height: 148px;
+  border-radius: 10px;
+  background: darken(theme.$my-app-background, 5%);
+}
+
+#main-icon {
+  padding-left: 5px;
+  width: 118px;
+  height: 118px;
+}
+
+#main-icon-wrapper:hover {
+  background: map-get(theme.$my-app-primary, 900);
+  cursor: pointer;
+}
+
+#main-sidebar-content {
+  grid-row: 2;
+}
+
+//Content
+#main-content {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 0px 100%;
+  padding: 10px;
+}
+
+.cardWithIcon {
   display: flex;
   align-items: center;
-  
-}
-.cardWithIcon:hover {
-  background: darken( theme.$my-app-background, 2% );
-}
-.title-header {
-  display: grid;
-  gap:10px;
-  grid-template-columns: 1fr 3fr;
 }
 
+.cardWithIcon:hover {
+  background: darken(theme.$my-app-background, 2%);
+}
+
+.title-header {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;
+}

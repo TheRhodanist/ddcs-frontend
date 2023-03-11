@@ -8,9 +8,8 @@ describe('CampaignDetailViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CampaignDetailViewComponent ]
-    })
-    .compileComponents();
+      declarations: [CampaignDetailViewComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CampaignDetailViewComponent);
     component = fixture.componentInstance;

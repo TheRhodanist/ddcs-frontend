@@ -1,34 +1,37 @@
 [
-    {
-        "name":"ARH",
-        "categoryKey":"guidanceType",
-        "categoryValue":"3"
-    },
-    {
-        "name":"IR",
-        "categoryKey":"guidanceType",
-        "categoryValue":"2"
-    },
-    {
-        "name":"INS",
-        "categoryKey":"guidanceType",
-        "categoryValue":"1"
-    },
-    {
-        "name":"Ballistic",
-        "categoryKey":"guidanceType",
-        "categoryValue":"0"
-    },{
-        "name":"SARH",
-        "categoryKey":"guidanceType",
-        "categoryValue":"4"
-    },{
-        "name":"TV",
-        "categoryKey":"guidanceType",
-        "categoryValue":"6"
-    },{
-        "name":"Laser",
-        "categoryKey":"guidanceType",
-        "categoryValue":"7"
-    }
+  {
+    "name": "ARH",
+    "categoryKey": "guidanceType",
+    "categoryValue": "3"
+  },
+  {
+    "name": "IR",
+    "categoryKey": "guidanceType",
+    "categoryValue": "2"
+  },
+  {
+    "name": "INS",
+    "categoryKey": "guidanceType",
+    "categoryValue": "1"
+  },
+  {
+    "name": "Ballistic",
+    "categoryKey": "guidanceType",
+    "categoryValue": "0"
+  },
+  {
+    "name": "SARH",
+    "categoryKey": "guidanceType",
+    "categoryValue": "4"
+  },
+  {
+    "name": "TV",
+    "categoryKey": "guidanceType",
+    "categoryValue": "6"
+  },
+  {
+    "name": "Laser",
+    "categoryKey": "guidanceType",
+    "categoryValue": "7"
+  }
 ]

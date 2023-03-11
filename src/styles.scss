@@ -5,7 +5,6 @@
 @include mat.core();
 @include mat.all-component-themes(vars.$my-app-theme);
 
-
 html,
 body {
   height: 100%;
@@ -13,6 +12,6 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  color:lightgray;
-  background: darken( vars.$my-app-background,0%);
+  color: lightgray;
+  background: darken(vars.$my-app-background, 0%);
 }

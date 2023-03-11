@@ -1,7 +1,12 @@
 <nav mat-tab-nav-bar [tabPanel]="tabPanel" preserveContent>
-    <a mat-tab-link *ngFor="let link of links"
-       (click)="activeLink = link"
-       [active]="activeLink == link"
-       [routerLink]="link.target"> {{link.name}} </a>
-  </nav>
-  <mat-tab-nav-panel #tabPanel><router-outlet></router-outlet></mat-tab-nav-panel>
+  <a
+    mat-tab-link
+    *ngFor="let link of links"
+    (click)="activeLink = link"
+    [active]="activeLink == link"
+    [routerLink]="link.target"
+  >
+    {{ link.name }}
+  </a>
+</nav>
+<mat-tab-nav-panel #tabPanel><router-outlet></router-outlet></mat-tab-nav-panel>

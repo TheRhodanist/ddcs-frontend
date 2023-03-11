@@ -1,31 +1,37 @@
 [
-    {
-        "name":"Tanks",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"Tanks"
-    },{
-        "name":"IFV",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"IFV"
-    },{
-        "name":"SAM",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"SAM related"
-    },{
-        "name":"Infantry",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"Infantry"
-    },{
-        "name":"APC",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"APC"
-    },{
-        "name":"Ships",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"Ships"
-    },{
-        "name":"Static",
-        "categoryKey":"unitAttributes",
-        "categoryValue":"Redacted"
-    }
+  {
+    "name": "Tanks",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "Tanks"
+  },
+  {
+    "name": "IFV",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "IFV"
+  },
+  {
+    "name": "SAM",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "SAM related"
+  },
+  {
+    "name": "Infantry",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "Infantry"
+  },
+  {
+    "name": "APC",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "APC"
+  },
+  {
+    "name": "Ships",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "Ships"
+  },
+  {
+    "name": "Static",
+    "categoryKey": "unitAttributes",
+    "categoryValue": "Redacted"
+  }
 ]

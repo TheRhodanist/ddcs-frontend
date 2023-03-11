@@ -1,9 +1,9 @@
+@use "src/_variables.scss" as theme;
 
-@use 'src/_variables.scss' as theme;
-
-.mat-mdc-row  {
-   border-color: map-get(theme.$my-app-primary, 500);
+.mat-mdc-row {
+  border-color: map-get(theme.$my-app-primary, 500);
 }
+
 .mat-mdc-row:hover .mat-mdc-cell {
-    background: darken( theme.$my-app-background, 2% );
+  background: darken(theme.$my-app-background, 2%);
 }

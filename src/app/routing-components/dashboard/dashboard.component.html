@@ -1,26 +1,41 @@
 <mat-card-header>
-    <h1>Welcome to DDCS</h1>
+  <h1>Welcome to DDCS</h1>
 </mat-card-header>
-<mat-card-content>
-</mat-card-content>
+<mat-card-content> </mat-card-content>
 
-<mat-card >
-    <mat-card-header ><button mat-button color="primary" class="title-button" [routerLink]="['/campaign',manager!.getId(currentCampaign?._id!.toString())]"><mat-icon>arrow_right</mat-icon>Current Campaign</button></mat-card-header>
-    <mat-card-content>
-        <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
-                <div>ID</div>
-                <div>Map</div>
-                <div>Minutes Red</div>
-                <div>Minutes Blue</div>
-        </div>
-        <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr;padding-top:20px">
-                <div>{{manager?.getId(currentCampaign?._id!.toString())}}</div>
-                <div>{{manager?.getMap(currentCampaign?._id!.toString())}}</div>
-                <div>{{currentCampaign?.totalMinutesPlayed_red}}</div>
-                <div>{{currentCampaign?.totalMinutesPlayed_blue}}</div>
-        </div>
-
-
-    </mat-card-content>
-    <mat-card-actions></mat-card-actions>
+<mat-card>
+  <mat-card-header
+    ><button
+      mat-button
+      color="primary"
+      class="title-button"
+      [routerLink]="[
+        '/campaign',
+        manager!.getId(currentCampaign?._id!.toString())
+      ]"
+    >
+      <mat-icon>arrow_right</mat-icon>Current Campaign
+    </button></mat-card-header
+  >
+  <mat-card-content>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
+      <div>ID</div>
+      <div>Map</div>
+      <div>Minutes Red</div>
+      <div>Minutes Blue</div>
+    </div>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 20px;
+      "
+    >
+      <div>{{ manager?.getId(currentCampaign?._id!.toString()) }}</div>
+      <div>{{ manager?.getMap(currentCampaign?._id!.toString()) }}</div>
+      <div>{{ currentCampaign?.totalMinutesPlayed_red }}</div>
+      <div>{{ currentCampaign?.totalMinutesPlayed_blue }}</div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions></mat-card-actions>
 </mat-card>

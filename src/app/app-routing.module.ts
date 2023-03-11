@@ -5,15 +5,18 @@ import { CampaignChooserComponent } from './campaign-view/campaign-chooser/campa
 import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/campaign-detail-view/campaign-detail-view.component';
 
 const routes: Routes = [
-  { path: 'data', loadChildren: () => import('./data-view/data-view.module').then(m => m.DataViewModule) },
-  { path: 'campaigns', component: CampaignChooserComponent },    
+  {
+    path: 'data',
+    loadChildren: () =>
+      import('./data-view/data-view.module').then((m) => m.DataViewModule),
+  },
+  { path: 'campaigns', component: CampaignChooserComponent },
   { path: 'campaign/:id', component: CampaignDetailViewComponent },
   { path: '**', component: DashboardComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}

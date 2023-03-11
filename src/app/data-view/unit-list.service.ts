@@ -7,31 +7,34 @@ import planeUnitCategories from './planeUnitCategories.json';
 
 @Injectable()
 export class UnitListService {
-
   private importedGroundFilters = groundUnitCategories;
   private importedPlaneFilters = planeUnitCategories;
-  groundFilters: categoryFilter<Unit>[] = [{"name":"All","filterFunction":(unit:Unit) => true}];
-  planeFilters: categoryFilter<Unit>[] = [{"name":"All","filterFunction":(unit:Unit) => true}];
+  groundFilters: categoryFilter<Unit>[] = [
+    { name: 'All', filterFunction: (unit: Unit) => true },
+  ];
+  planeFilters: categoryFilter<Unit>[] = [
+    { name: 'All', filterFunction: (unit: Unit) => true },
+  ];
 
   units: Unit[] = [];
-  
-  constructor(
-    private http: HttpClient,
-  ) { }
+
+  constructor(private http: HttpClient) {}
 
   getUnits() {
-    return this.http.get<Unit[]>("../../assets/unitinfo.json");
+    return this.http.get<Unit[]>('../../assets/unitinfo.json');
   }
   /**
    * Builds an array of categoryFilter object and saves it to the local filters object
    */
-   buildGroundFilters():void {
+  buildGroundFilters(): void {
     for (const filter of this.importedGroundFilters) {
-      this.groundFilters.push({"name":filter.name,"filterFunction":(unit:Unit) => { 
-        if(typeof unit.unitAttributes == "undefined") return false;
-        return unit.unitAttributes.includes(filter.categoryValue);
-      }})
-      
+      this.groundFilters.push({
+        name: filter.name,
+        filterFunction: (unit: Unit) => {
+          if (typeof unit.unitAttributes == 'undefined') return false;
+          return unit.unitAttributes.includes(filter.categoryValue);
+        },
+      });
     }
   }
   /**
@@ -39,18 +42,23 @@ export class UnitListService {
    * @returns Array of categoryFilter objects
    */
   getGroundFilters(): categoryFilter<Unit>[] {
-    if(this.groundFilters.length==1) {this.buildGroundFilters();}
+    if (this.groundFilters.length == 1) {
+      this.buildGroundFilters();
+    }
     return this.groundFilters;
   }
   /**
    * Builds an array of categoryFilter object and saves it to the local filters object
    */
-   buildPlaneFilters():void {
+  buildPlaneFilters(): void {
     for (const filter of this.importedPlaneFilters) {
-      this.planeFilters.push({"name":filter.name,"filterFunction":(plane:Unit) => { 
-        if(typeof plane.unitAttributes == "undefined") return false;
-        return plane.unitAttributes.includes(filter.categoryValue);
-      }})
+      this.planeFilters.push({
+        name: filter.name,
+        filterFunction: (plane: Unit) => {
+          if (typeof plane.unitAttributes == 'undefined') return false;
+          return plane.unitAttributes.includes(filter.categoryValue);
+        },
+      });
     }
   }
   /**
@@ -58,8 +66,9 @@ export class UnitListService {
    * @returns Array of categoryFilter objects
    */
   getPlaneFilters(): categoryFilter<Unit>[] {
-    if(this.planeFilters.length==1) {this.buildPlaneFilters();}
+    if (this.planeFilters.length == 1) {
+      this.buildPlaneFilters();
+    }
     return this.planeFilters;
   }
 }
-

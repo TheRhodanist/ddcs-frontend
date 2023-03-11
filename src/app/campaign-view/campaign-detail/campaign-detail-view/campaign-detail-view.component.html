@@ -1,10 +1,24 @@
 <!-- TODO make it actually change styles to indicate the hover/interactive state -->
-<mat-card   >
-    <mat-card-content class="cardWithIcon title-header">
-        <button mat-button color="primary" class="title-button" [routerLink]="['/campaigns']"><mat-icon>expand_less</mat-icon>campaigns</button>
-        <h1 class="title-text">Kills for the campaign: {{id}} on {{mapName}} as of {{getDatefromEpoch(modifiedDate)}}</h1>
-    </mat-card-content>    
+<mat-card>
+  <mat-card-content class="cardWithIcon title-header">
+    <button
+      mat-button
+      color="primary"
+      class="title-button"
+      [routerLink]="['/campaigns']"
+    >
+      <mat-icon>expand_less</mat-icon>campaigns
+    </button>
+    <h1 class="title-text">
+      Kills for the campaign: {{ id }} on {{ mapName }} as of
+      {{ getDatefromEpoch(modifiedDate) }}
+    </h1>
+  </mat-card-content>
 </mat-card>
-<p style="color:red">Currently working via wonky hotfix...may have bad performance until the export gets fixed by the DDCS-Devs</p><!-- FIXME remove when export fixed-->
+<p style="color: red">
+  Currently working via wonky hotfix...may have bad performance until the export
+  gets fixed by the DDCS-Devs
+</p>
+<!-- FIXME remove when export fixed-->
 
-<app-event-list [data]="events" ></app-event-list>
+<app-event-list [data]="events"></app-event-list>

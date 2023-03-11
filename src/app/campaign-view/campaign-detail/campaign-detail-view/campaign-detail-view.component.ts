@@ -11,6 +11,7 @@ import { CampaignEventService } from '../../campaign-events.service';
 })
 export class CampaignDetailViewComponent implements OnInit {
   id: number = -1; //Id of the loaded campaign,(-1) for undefined
+  isLoading: boolean = false;
 
   modifiedDate: string = '0';
   mapName: string = '_';
@@ -38,6 +39,7 @@ export class CampaignDetailViewComponent implements OnInit {
    */
   ngOnInit(): void {
     //Get the campaign id from the route/url
+    this.isLoading = true;
     this.route.params.subscribe((params) => {
       this.id = params['id'];
       //load the eventservice for the id that was extracted
@@ -45,6 +47,7 @@ export class CampaignDetailViewComponent implements OnInit {
       if (this.campaign != undefined) {
         this.campaignEventService.loadCampaignById(this.id);
         this.campaignEventService.getEvents().subscribe((events) => {
+          this.isLoading = false;
           this.modifiedDate = this.campaignEventService.getDate();
           this.mapName = this.manager!.getMap(this.campaign!._id);
           this.events = events.reverse();

@@ -9,6 +9,7 @@ import { UnitListService } from '../unit-list.service';
   styleUrls: ['./plane-list.component.scss'],
 })
 export class PlaneListComponent implements OnInit {
+  isLoading: boolean = false;
   planes: Unit[] = [];
   filters: categoryFilter<Unit>[] = [];
   columns: columnFormat[] = [
@@ -25,8 +26,10 @@ export class PlaneListComponent implements OnInit {
    * Fetches the plane array and sorts it to only display planes
    */
   ngOnInit(): void {
+    this.isLoading = true;
     this.unitListService.getUnits().subscribe((units) => {
       this.planes = units.filter((unit) => [0, 1].includes(unit.unitCategory));
+      this.isLoading = false;
     });
     this.filters = this.unitListService.getPlaneFilters();
   }

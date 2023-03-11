@@ -4,6 +4,7 @@ import {
   EventEmitter,
   Input,
   OnInit,
+  Output,
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
@@ -24,6 +25,7 @@ import { CampaignManagmentService } from '../campaign-managment.service';
 })
 export class EventListComponent<T> implements OnInit {
   addOnBlur = true;
+  @Input() hasSpinner: boolean = false;
 
   @Input() columns: columnFormat[] = [
     {

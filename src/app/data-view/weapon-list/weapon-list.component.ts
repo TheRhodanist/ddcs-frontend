@@ -9,6 +9,7 @@ import { WeaponListService } from './weapon-list.service';
   styleUrls: ['./weapon-list.component.scss'],
 })
 export class WeaponListComponent implements OnInit {
+  isLoading: boolean = false;
   weapons: Weapon[] = [];
   filters: categoryFilter<Weapon>[] = [];
   columns: columnFormat[] = [
@@ -32,9 +33,11 @@ export class WeaponListComponent implements OnInit {
   ];
   constructor(private weaponListService: WeaponListService) {}
   ngOnInit(): void {
-    this.weaponListService
-      .getWeapons()
-      .subscribe((weapons) => (this.weapons = weapons));
+    this.isLoading = true;
+    this.weaponListService.getWeapons().subscribe((weapons) => {
+      this.weapons = weapons;
+      this.isLoading = false;
+    });
     this.filters = this.weaponListService.getFilters();
   }
 }

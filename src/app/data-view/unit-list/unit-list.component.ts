@@ -9,6 +9,7 @@ import { UnitListService } from '../unit-list.service';
   styleUrls: ['./unit-list.component.scss'],
 })
 export class UnitListComponent implements OnInit {
+  isLoading: boolean = false;
   units: Unit[] = [];
   filters: categoryFilter<Unit>[] = [];
   columns: columnFormat[] = [
@@ -22,8 +23,10 @@ export class UnitListComponent implements OnInit {
 
   constructor(private unitListService: UnitListService) {}
   ngOnInit(): void {
+    this.isLoading = true;
     this.unitListService.getUnits().subscribe((units) => {
       this.units = units.filter((unit) => ![0, 1].includes(unit.unitCategory));
+      this.isLoading = false;
     });
     this.filters = this.unitListService.getGroundFilters();
   }

@@ -35,7 +35,7 @@ export class FilteredListComponent<T> implements OnInit {
   @Input() filters: categoryFilter<T>[] = [];
   activeFilters: categoryFilter<T>[] = [];
   filteredData: any[] = [];
-  isSpinnerHidden: boolean = true;
+  @Input() hasSpinner: boolean = false;
 
   /*
    * Columns must match this format

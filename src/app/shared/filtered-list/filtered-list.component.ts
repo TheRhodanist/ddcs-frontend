@@ -6,6 +6,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatChipListboxChange } from '@angular/material/chips';
 import { categoryFilter, columnFormat } from '../shared.module';
+import { MatSort } from '@angular/material/sort';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class FilteredListComponent<T> implements OnInit{
     activeFilters: categoryFilter<T>[] = [];
     filteredData: any[] = [];
     
+    
     /*
     * Columns must match this format
     * {
@@ -39,6 +41,7 @@ export class FilteredListComponent<T> implements OnInit{
     //displayedColumns: string[] = ['_id', 'natoName', 'warbondCost'];
     dataSource = new MatTableDataSource(this.data);
     @ViewChild(MatPaginator) paginator!: MatPaginator;
+    @ViewChild(MatSort) sort!: MatSort;
     /**
      * 
      */
@@ -50,6 +53,7 @@ export class FilteredListComponent<T> implements OnInit{
     }
     ngAfterViewInit() {
       this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
       this.updateChips(["All"]);
     }
     ngOnChanges(changes: SimpleChanges) {
@@ -87,7 +91,8 @@ export class FilteredListComponent<T> implements OnInit{
         // console.log(this.dataSource.data);
       }
     }
-  
+
+
     // /**
     //  * 
     //  * @param event 

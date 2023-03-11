@@ -18,6 +18,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FilteredListComponent } from './filtered-list/filtered-list.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { FormsModule } from '@angular/forms';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -39,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     MatTableModule,
+    MatSortModule,
     MatInputModule,
     MatPaginatorModule,
     MatCardModule,
@@ -58,6 +60,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     MatTableModule,
+    MatSortModule,
     MatInputModule,
     MatPaginatorModule,
     MatCardModule,

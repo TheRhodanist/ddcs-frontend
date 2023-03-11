@@ -10,7 +10,7 @@ import { CampaignEventService } from '../../campaign-events.service';
   providers: [CampaignEventService],
 })
 export class CampaignDetailViewComponent implements OnInit {
-  id: number = -1; //Id of the loaded campaign,(-1) for undefined
+  id: string = '-1'; //Id of the loaded campaign,(-1) for undefined
   isLoading: boolean = false;
 
   modifiedDate: string = '0';
@@ -22,7 +22,6 @@ export class CampaignDetailViewComponent implements OnInit {
   /**
    * The currently loaded campaign
    */
-  campaign?: Campaign = undefined;
   manager?: CampaignManagmentService = undefined;
   /**
    *
@@ -43,19 +42,16 @@ export class CampaignDetailViewComponent implements OnInit {
     this.route.params.subscribe((params) => {
       this.id = params['id'];
       //load the eventservice for the id that was extracted
-      this.campaign = this.campaignManager.getCampaignById(this.id);
-      if (this.campaign != undefined) {
-        this.campaignEventService.loadCampaignById(this.id);
-        this.campaignEventService.getEvents().subscribe((events) => {
-          this.isLoading = false;
-          this.modifiedDate = this.campaignEventService.getDate();
-          this.mapName = this.manager!.getMap(this.campaign!._id);
-          this.events = events.reverse();
-          this.events = this.events.filter((event) =>
-            event.campaign!.includes(this.id.toString())
-          );
-        });
-      }
+      this.campaignEventService.loadCampaignById(this.id);
+      this.campaignEventService.getEvents().subscribe((events) => {
+        this.modifiedDate = this.campaignEventService.getDate();
+        this.manager!.getMap(this.id).subscribe((m) => (this.mapName = m));
+        this.events = events.reverse();
+        this.events = this.events.filter((event) =>
+          event.campaign!.includes(this.id.toString())
+        );
+        this.isLoading = false;
+      });
     });
   }
 

@@ -8,11 +8,8 @@ import { Campaign } from 'src/app/shared/Interfaces';
 })
 export class DashboardComponent implements OnInit {
   currentCampaign?: Campaign = undefined;
-  manager?: CampaignManagmentService = undefined;
 
-  constructor(private campaignManager: CampaignManagmentService) {
-    this.manager = campaignManager;
-  }
+  constructor(private campaignManager: CampaignManagmentService) {}
 
   ngOnInit(): void {
     this.campaignManager
@@ -20,5 +17,11 @@ export class DashboardComponent implements OnInit {
       .subscribe(
         (campaigns) => (this.currentCampaign = campaigns[campaigns.length - 1])
       );
+  }
+  getId(id: string): string {
+    return CampaignManagmentService.getIdFromFullId(id);
+  }
+  getMap(id: string): string {
+    return CampaignManagmentService.getMapFromFullId(id);
   }
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, tap } from 'rxjs';
+import { concatMap, filter, map, Observable, of, tap } from 'rxjs';
 import { Campaign } from './Interfaces';
 
 @Injectable({
@@ -18,6 +18,7 @@ export class CampaignManagmentService {
    * @returns an array of campaigns
    */
   getCampaigns(): Observable<Campaign[]> {
+    if (this.campaigns.length !== 0) return of(this.campaigns);
     return this.http
       .get<Campaign[]>('../../assets/campaigns.json')
       .pipe(
@@ -40,17 +41,14 @@ export class CampaignManagmentService {
    * @param id the id for which to get the campaign
    * @returns the campaign for the given id, undefined if none is found
    */
-  getCampaignByFullId(id: number): Campaign | undefined {
+  getCampaignByFullId(id: number): Observable<Campaign> {
     //TODO refactor for better performance
     let filteredCampaigns = this.campaigns.filter(
       (camp) =>
         CampaignManagmentService.getIdFromFullId(camp.campaignId!.toString()) ==
         id.toString()
     );
-    if (filteredCampaigns.length != 0) {
-      return filteredCampaigns[0];
-    }
-    return undefined;
+    return of(filteredCampaigns[0]);
   }
 
   /**
@@ -81,10 +79,22 @@ export class CampaignManagmentService {
     if (map === 'CA') return 'Caucasus';
     return map;
   }
-  getMap(id: string): string {
-    return CampaignManagmentService.getMapFromFullId(id);
+  getMapFromId(id: string): Observable<string> {
+    return this.getCampaigns().pipe(
+      map((campaigns) => {
+        return CampaignManagmentService.getMapFromFullId(
+          campaigns.filter((c) => c._id.includes(id))[0]._id
+        );
+      })
+    );
   }
-  getId(id: string): string {
+
+  getMap(id: string): Observable<string> {
+    if (id.startsWith('Drex'))
+      return of(CampaignManagmentService.getMapFromFullId(id));
+    return this.getMapFromId(id);
+  }
+  static getId(id: string): string {
     return CampaignManagmentService.getIdFromFullId(id);
   }
 }

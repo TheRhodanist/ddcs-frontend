@@ -9,7 +9,7 @@ import { categoryFilter } from '../shared/shared.module';
  */
 @Injectable()
 export class CampaignEventService {
-  private id: number = -1;
+  private id: string = '-1';
   private modifiedDate: string = '0';
   events: CampaignEvent[] = [];
   killEvents: CampaignEvent[] = [];
@@ -22,7 +22,7 @@ export class CampaignEventService {
    * Loads events for the underlying campaign and stores them in an array
    * @param id the campaign id for which events should be loaded
    */
-  loadCampaignById(id: number) {
+  loadCampaignById(id: string) {
     this.id = id;
     this.getEvents().subscribe((events) => {
       this.events = events;

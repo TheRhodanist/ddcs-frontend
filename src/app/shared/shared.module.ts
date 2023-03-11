@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
 import {MatDividerModule} from '@angular/material/divider'; 
 import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatChipsModule} from '@angular/material/chips';
@@ -13,6 +14,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatPaginatorModule} from '@angular/material/paginator'
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FilteredListComponent } from './filtered-list/filtered-list.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { FormsModule } from '@angular/forms';
@@ -30,6 +32,8 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatDividerModule,
     MatButtonModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
     MatListModule,
     MatChipsModule,
     MatFormFieldModule,
@@ -47,6 +51,8 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatDividerModule,
     MatButtonModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
     MatListModule,
     MatChipsModule,
     MatFormFieldModule,

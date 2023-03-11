@@ -1,4 +1,5 @@
 <h1>List of DDCS campaigns(Click one to view its events)</h1>
+<mat-checkbox [(ngModel)]="hideEmpty" (change)="update()">Hide empty</mat-checkbox>
 
 <table mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 

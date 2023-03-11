@@ -32,7 +32,8 @@
     
   }
   #main-icon-wrapper:hover {
-    background: map-get(theme.$my-app-primary, 500);
+    background: map-get(theme.$my-app-primary, 900);
+    cursor: pointer;
   }
   #main-sidebar-content {
     grid-row: 2;

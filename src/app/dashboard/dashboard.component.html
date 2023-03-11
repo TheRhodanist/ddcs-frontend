@@ -1,12 +1,11 @@
-<mat-card-header>
-  <h1>Welcome to DDCS</h1>
-</mat-card-header>
-<mat-card-content> </mat-card-content>
-
+<mat-card class="header-card">
+  <mat-card-content><h1>Welcome to DDCS</h1></mat-card-content>
+</mat-card>
+<p></p>
 <mat-card>
   <mat-card-header
     ><button
-      mat-button
+      mat-raised-button
       color="primary"
       class="title-button"
       [routerLink]="[
@@ -17,7 +16,7 @@
       <mat-icon>arrow_right</mat-icon>Current Campaign
     </button></mat-card-header
   >
-  <mat-card-content>
+  <mat-card-content style="padding-top: 10px">
     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
       <div>ID</div>
       <div>Map</div>

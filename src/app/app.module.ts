@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
-import { DashboardComponent } from './routing-components/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedUIModule } from './shared/shared.module';
 import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/campaign-detail-view/campaign-detail-view.component';
 import { MatTableModule } from '@angular/material/table';

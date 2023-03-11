@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './routing-components/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { CampaignChooserComponent } from './campaign-view/campaign-chooser/campaign-chooser.component';
 import { CampaignDetailViewComponent } from './campaign-view/campaign-detail/campaign-detail-view/campaign-detail-view.component';
 

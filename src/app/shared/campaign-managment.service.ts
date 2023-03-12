@@ -6,9 +6,13 @@ import { Campaign } from './Interfaces';
 @Injectable({
   providedIn: 'root',
 })
+/**
+ * Manages all the campaigns and provides function to fetch those and extract informations out of them
+ */
 export class CampaignManagmentService {
   private campaigns: Campaign[] = [];
   selectedCampaign?: Campaign = undefined;
+
   constructor(private http: HttpClient) {
     this.getCampaigns().subscribe((campaigns) => (this.campaigns = campaigns));
   }
@@ -66,35 +70,50 @@ export class CampaignManagmentService {
     }
     return undefined;
   }
-
+  /**
+   *
+   * @param id short id
+   * @returns Returns the mapname as string from the provided full id
+   */
+  getMapFromId(id: string): Observable<string> {
+    return this.getCampaigns().pipe(
+      map((campaigns) =>
+        CampaignManagmentService.getMapFromFullId(
+          campaigns.filter((c) => c._id.includes(id))[0]._id
+        )
+      )
+    );
+  }
+  /**
+   *
+   * @param id an id
+   * @returns Returns the mapname based on the provided id (either format)
+   */
+  getMap(id: string): Observable<string> {
+    if (id.startsWith('Drex'))
+      return of(CampaignManagmentService.getMapFromFullId(id));
+    return this.getMapFromId(id);
+  }
+  /**
+   * Returns the short id based of the full id
+   * @param id full id
+   * @returns short id
+   */
   static getIdFromFullId(id: string): string {
     let localId = '';
     localId = id.split('_')[2];
     return localId;
   }
+  /**
+   *Returns the mapname extracted from the full id
+   * @param id full id
+   * @returns mapname
+   */
   static getMapFromFullId(id: string): string {
     let map = '';
     let filteredId = id.split('_')[1];
     map = filteredId.split('-')[2];
     if (map === 'CA') return 'Caucasus';
     return map;
-  }
-  getMapFromId(id: string): Observable<string> {
-    return this.getCampaigns().pipe(
-      map((campaigns) => {
-        return CampaignManagmentService.getMapFromFullId(
-          campaigns.filter((c) => c._id.includes(id))[0]._id
-        );
-      })
-    );
-  }
-
-  getMap(id: string): Observable<string> {
-    if (id.startsWith('Drex'))
-      return of(CampaignManagmentService.getMapFromFullId(id));
-    return this.getMapFromId(id);
-  }
-  static getId(id: string): string {
-    return CampaignManagmentService.getIdFromFullId(id);
   }
 }

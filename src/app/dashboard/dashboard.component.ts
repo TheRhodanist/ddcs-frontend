@@ -7,21 +7,29 @@ import { Campaign } from 'src/app/shared/Interfaces';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  currentCampaign?: Campaign = undefined;
+  currentCampaign?: Campaign = {
+    _id: 'undefined',
+    totalMinutesPlayed_blue: -1,
+    totalMinutesPlayed_red: -1,
+    createdAt: '0',
+    updatedAt: '0',
+  };
+  currentEnabled: boolean = false;
 
   constructor(private campaignManager: CampaignManagmentService) {}
 
   ngOnInit(): void {
-    this.campaignManager
-      .getCampaigns()
-      .subscribe(
-        (campaigns) => (this.currentCampaign = campaigns[campaigns.length - 1])
-      );
+    this.campaignManager.getCampaigns().subscribe((campaigns) => {
+      this.currentCampaign = campaigns[0];
+      this.currentEnabled = true;
+    });
   }
   getId(id: string): string {
+    if (id === 'undefined') return 'undefined';
     return CampaignManagmentService.getIdFromFullId(id);
   }
   getMap(id: string): string {
+    if (id === 'undefined') return 'undefined';
     return CampaignManagmentService.getMapFromFullId(id);
   }
 }

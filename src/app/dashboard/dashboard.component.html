@@ -8,6 +8,7 @@
       mat-raised-button
       color="primary"
       class="title-button"
+      [disabled]="!currentEnabled"
       [routerLink]="['/campaign', getId(currentCampaign?._id!.toString())]"
     >
       <mat-icon>arrow_right</mat-icon>Current Campaign

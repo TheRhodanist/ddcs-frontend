@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { concatMap, filter, map, Observable, of, tap } from 'rxjs';
+import { concatMap, filter, map, Observable, of, Subject, tap } from 'rxjs';
 import { Campaign } from './Interfaces';
 
 @Injectable({
@@ -12,9 +12,25 @@ import { Campaign } from './Interfaces';
 export class CampaignManagmentService {
   private campaigns: Campaign[] = [];
   selectedCampaign?: Campaign = undefined;
+  private campaignFetcher: Subject<Campaign[]> = new Subject();
 
   constructor(private http: HttpClient) {
-    this.getCampaigns().subscribe((campaigns) => (this.campaigns = campaigns));
+    this.http
+      .get<Campaign[]>('../../assets/campaigns.json')
+      .pipe(
+        tap((campaigns) => {
+          //Reverse the Array so the latest campaign is the first element
+          this.campaigns = campaigns.reverse();
+          //Add the shortened id into each campaign
+          campaigns.forEach(
+            (campaign) =>
+              (campaign.campaignId = CampaignManagmentService.getIdFromFullId(
+                campaign._id
+              ))
+          );
+        })
+      )
+      .subscribe(this.campaignFetcher);
   }
 
   /**
@@ -23,17 +39,7 @@ export class CampaignManagmentService {
    */
   getCampaigns(): Observable<Campaign[]> {
     if (this.campaigns.length !== 0) return of(Array.from(this.campaigns));
-    return this.http.get<Campaign[]>('../../assets/campaigns.json').pipe(
-      tap((campaigns) => {
-        this.campaigns = campaigns.reverse();
-        campaigns.forEach(
-          (campaign) =>
-            (campaign.campaignId = CampaignManagmentService.getIdFromFullId(
-              campaign._id
-            ))
-        );
-      })
-    );
+    return this.campaignFetcher;
   }
 
   getCurrentCampaign(): Observable<Campaign> | undefined {

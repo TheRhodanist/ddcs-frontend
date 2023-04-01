@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { filter, map, Observable, of, tap } from 'rxjs';
+import { filter, map, Observable, of, Subject, tap } from 'rxjs';
 import { CampaignEvent, EventWeapon } from 'src/app/shared/Interfaces';
 import { CampaignManagmentService } from '../shared/campaign-managment.service';
 import { categoryFilter } from '../shared/shared.module';
@@ -11,8 +11,8 @@ import { categoryFilter } from '../shared/shared.module';
 export class CampaignEventService {
   private id: string = '-1';
   private modifiedDate: string = '0';
-  events: CampaignEvent[] = [];
-  killEvents: CampaignEvent[] = [];
+  private eventFetcher: Subject<CampaignEvent[]> = new Subject();
+  private events: CampaignEvent[] = [];
 
   constructor(
     private campaignService: CampaignManagmentService,
@@ -24,18 +24,11 @@ export class CampaignEventService {
    */
   loadCampaignById(id: string) {
     this.id = id;
-    this.getEvents().subscribe((events) => {
-      this.events = events;
-    });
-  }
-
-  getEvents(): Observable<CampaignEvent[]> {
-    if (this.events.length != 0) return of(Array.from(this.events));
     //FIXME undo temp fix for broken ddcs-export
     // return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").pipe(
     //   tap( events => this.modifiedDate = events[events.length-1].eventTime)
     // );
-    return this.http
+    this.http
       .get<CampaignEvent[]>('/assets/1676759227000_killEvents.json')
       .pipe(
         tap((events) => {
@@ -43,7 +36,13 @@ export class CampaignEventService {
           this.modifiedDate = events[events.length - 1].eventTime;
           return events;
         })
-      );
+      )
+      .subscribe(this.eventFetcher);
+  }
+
+  getEvents(): Observable<CampaignEvent[]> {
+    if (this.events.length != 0) return of(Array.from(this.events));
+    return this.eventFetcher;
   }
 
   getDate(): string {

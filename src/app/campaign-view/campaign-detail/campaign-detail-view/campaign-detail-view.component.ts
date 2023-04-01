@@ -12,17 +12,12 @@ import { CampaignEventService } from '../../campaign-events.service';
 export class CampaignDetailViewComponent implements OnInit {
   id: string = '-1'; //Id of the loaded campaign,(-1) for undefined
   isLoading: boolean = false;
-
   modifiedDate: string = '0';
-  mapName: string = '_';
+  mapName: string = 'undefined';
   /**
    * List of events belonging to the currently loaded campaign
    */
   events: CampaignEvent[] = [];
-  /**
-   * The currently loaded campaign
-   */
-  manager?: CampaignManagmentService = undefined;
   /**
    *
    */
@@ -30,9 +25,7 @@ export class CampaignDetailViewComponent implements OnInit {
     private route: ActivatedRoute,
     private campaignEventService: CampaignEventService,
     private campaignManager: CampaignManagmentService
-  ) {
-    this.manager = campaignManager;
-  }
+  ) {}
   /**
    *
    */
@@ -45,7 +38,9 @@ export class CampaignDetailViewComponent implements OnInit {
       this.campaignEventService.loadCampaignById(this.id);
       this.campaignEventService.getEvents().subscribe((events) => {
         this.modifiedDate = this.campaignEventService.getDate();
-        this.manager!.getMap(this.id).subscribe((m) => (this.mapName = m));
+        this.campaignManager
+          .getMap(this.id)
+          .subscribe((m) => (this.mapName = m));
         this.events = events;
         this.events = this.events.filter((event) =>
           event.campaign!.includes(this.id.toString())

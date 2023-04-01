@@ -26,7 +26,7 @@ export class CampaignChooserComponent implements OnInit {
 
   ngOnInit(): void {
     this.campaignManager.getCampaigns().subscribe((campaigns) => {
-      this.data = campaigns.reverse();
+      this.data = campaigns;
       this.update();
     });
   }

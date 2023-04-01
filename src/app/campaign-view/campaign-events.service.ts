@@ -30,7 +30,7 @@ export class CampaignEventService {
   }
 
   getEvents(): Observable<CampaignEvent[]> {
-    if (this.events.length != 0) return of(this.events);
+    if (this.events.length != 0) return of(Array.from(this.events));
     //FIXME undo temp fix for broken ddcs-export
     // return this.http.get<CampaignEvent[]>("/assets/"+this.id+"_killEvents.json").pipe(
     //   tap( events => this.modifiedDate = events[events.length-1].eventTime)
@@ -38,9 +38,11 @@ export class CampaignEventService {
     return this.http
       .get<CampaignEvent[]>('/assets/1676759227000_killEvents.json')
       .pipe(
-        tap(
-          (events) => (this.modifiedDate = events[events.length - 1].eventTime)
-        )
+        tap((events) => {
+          this.events = events.reverse();
+          this.modifiedDate = events[events.length - 1].eventTime;
+          return events;
+        })
       );
   }
 

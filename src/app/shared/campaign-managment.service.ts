@@ -22,19 +22,18 @@ export class CampaignManagmentService {
    * @returns an array of campaigns
    */
   getCampaigns(): Observable<Campaign[]> {
-    if (this.campaigns.length !== 0) return of(this.campaigns);
-    return this.http
-      .get<Campaign[]>('../../assets/campaigns.json')
-      .pipe(
-        tap((campaigns) =>
-          campaigns.forEach(
-            (campaign) =>
-              (campaign.campaignId = CampaignManagmentService.getIdFromFullId(
-                campaign._id
-              ))
-          )
-        )
-      );
+    if (this.campaigns.length !== 0) return of(Array.from(this.campaigns));
+    return this.http.get<Campaign[]>('../../assets/campaigns.json').pipe(
+      tap((campaigns) => {
+        this.campaigns = campaigns.reverse();
+        campaigns.forEach(
+          (campaign) =>
+            (campaign.campaignId = CampaignManagmentService.getIdFromFullId(
+              campaign._id
+            ))
+        );
+      })
+    );
   }
 
   getCurrentCampaign(): Observable<Campaign> | undefined {

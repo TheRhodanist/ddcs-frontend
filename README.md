@@ -1,5 +1,8 @@
 # DdcsFrontend
 
+Currently live on https://ddcs.rhodan.cloud
+A Frontend for the DDCS Digital Combat Simulator Flight-Sim dsiplaying events/stats/unitinfos etc...
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
 ## Development server
